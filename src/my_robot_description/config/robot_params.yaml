@@ -1,0 +1,58 @@
+# Robot parameter configuration
+# This file contains the physical and sensor parameters for the robot
+
+robot_description:
+  # Physical dimensions
+  dimensions:
+    base_link_length: 0.3
+    base_link_width: 0.2
+    base_link_height: 0.1
+    wheel_radius: 0.05
+    wheel_thickness: 0.03
+    wheel_separation: 0.22
+    caster_radius: 0.02
+
+  # Mass and inertia properties
+  mass:
+    base_link: 1.0
+    wheel: 0.1
+    caster: 0.01
+
+  # Motor and drive properties
+  drive:
+    max_linear_velocity: 1.0    # m/s
+    max_angular_velocity: 2.0   # rad/s
+    wheel_friction: 1.0
+    caster_friction: 0.1
+
+  # Sensor configuration
+  sensors:
+    laser:
+      enabled: true
+      min_range: 0.1
+      max_range: 5.0
+      resolution: 0.01
+      samples: 360
+      update_rate: 10.0
+      pose:
+        x: 0.1
+        y: 0.0
+        z: 0.07  # base_link_height/2 + 0.02
+
+# Simulation parameters
+simulation:
+  physics:
+    gravity: -9.8
+    step_size: 0.001
+    real_time_factor: 1.0
+    real_time_update_rate: 1000
+
+  # Gazebo plugin configuration
+  plugins:
+    differential_drive:
+      update_rate: 50.0
+      publish_tf: true
+      publish_odom: true
+      publish_wheel_tf: false
+      odometry_frame: "odom"
+      robot_base_frame: "base_link"

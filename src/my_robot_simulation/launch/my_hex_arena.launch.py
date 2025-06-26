@@ -1,33 +1,78 @@
+#!/usr/bin/env python3
+# Copyright 2024 wb
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+"""
+Launch file for hexagonal arena simulation environment.
+
+This launch file starts Gazebo with the hexagonal arena world.
+"""
+
 import os
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
-from launch.actions import ExecuteProcess # 用于直接执行外部命令 (gzserver, gzclient)
+from launch.actions import ExecuteProcess, DeclareLaunchArgument
+from launch.substitutions import LaunchConfiguration
+
 
 def generate_launch_description():
-    pkg_my_robot_simulation = get_package_share_directory('my_robot_simulation')
-
-    # 设置你的自定义世界文件路径
-    world_file_name = 'my_hex_arena.world'
-    world_path = os.path.join(pkg_my_robot_simulation, 'worlds', world_file_name)
-
-    # 1. 启动 Gazebo 服务器 (gzserver)，并明确指定加载你的世界文件
-    # '-s' 参数用于加载 Gazebo 插件，这些是ROS-Gazebo集成所必需的
-    gzserver_cmd = ExecuteProcess(
-        cmd=['gzserver', world_path, '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', '-s', 'libgazebo_ros_force_system.so'],
-        output='screen', # 将输出显示在屏幕上
-        emulate_tty=True # 模拟TTY，以更好地显示颜色和输出
+    """Generate launch description for hexagonal arena."""
+    # Get package share directory
+    pkg_simulation = get_package_share_directory('my_robot_simulation')
+    
+    # Set the path to your custom world file
+    world_file = os.path.join(pkg_simulation, 'worlds', 'my_hex_arena.world')
+    
+    # Launch arguments
+    world_arg = DeclareLaunchArgument(
+        'world',
+        default_value=world_file,
+        description='Path to world file'
     )
-
-    # 2. 启动 Gazebo 客户端 (gzclient)，即 Gazebo 的图形界面
+    
+    gui_arg = DeclareLaunchArgument(
+        'gui',
+        default_value='true',
+        description='Set to false to run headless'
+    )
+    
+    # 1. Launch Gazebo server (gzserver) with specified world file
+    # '-s' parameter loads Gazebo plugins required for ROS-Gazebo integration
+    gzserver_cmd = ExecuteProcess(
+        cmd=[
+            'gzserver', 
+            LaunchConfiguration('world'),
+            '-s', 'libgazebo_ros_init.so',
+            '-s', 'libgazebo_ros_factory.so',
+            '-s', 'libgazebo_ros_force_system.so'
+        ],
+        output='screen',  # Display output on screen
+        emulate_tty=True  # Emulate TTY for better color and output display
+    )
+    
+    # 2. Launch Gazebo client (gzclient) - the graphical interface
     gzclient_cmd = ExecuteProcess(
         cmd=['gzclient'],
         output='screen',
-        emulate_tty=True
+        emulate_tty=True,
+        condition=LaunchConfiguration('gui')  # Only launch if GUI is enabled
     )
-
-    # 返回 LaunchDescription，现在只包含直接启动 gzserver 和 gzclient 的命令
+    
+    # Return LaunchDescription with commands to launch gzserver and gzclient
     return LaunchDescription([
+        world_arg,
+        gui_arg,
         gzserver_cmd,
         gzclient_cmd,
     ])
-
