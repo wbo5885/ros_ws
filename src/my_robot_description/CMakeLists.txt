@@ -23,13 +23,14 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-ament_package()
-# Install URDF, worlds, and launch files
+# Install URDF, worlds, launch files, config files, and rviz configs
 install(
-  DIRECTORY urdf worlds launch
+  DIRECTORY urdf worlds launch config rviz
   DESTINATION share/${PROJECT_NAME}
 )
 install(
   FILES urdf/model.urdf urdf/model.config
   DESTINATION share/${PROJECT_NAME}
 )
+
+ament_package()

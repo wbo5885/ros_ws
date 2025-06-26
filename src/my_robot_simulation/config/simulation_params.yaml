@@ -1,0 +1,70 @@
+# Simulation environment configuration
+# This file contains parameters for different simulation environments
+
+# Default world configuration
+default_world:
+  name: "my_robot_world"
+  physics:
+    type: "ode"
+    gravity: [0, 0, -9.8]
+    max_step_size: 0.001
+    real_time_factor: 1.0
+    real_time_update_rate: 1000
+  
+  lighting:
+    sun:
+      cast_shadows: true
+      diffuse: [1.0, 1.0, 1.0, 1.0]
+      specular: [1.0, 1.0, 1.0, 1.0]
+      pose: [0, 0, 10, 0, 0, 0]
+
+# Hexagonal arena configuration
+hex_arena:
+  name: "my_hex_arena_world"
+  arena_size: 10.0  # meters (distance from center to wall)
+  wall_height: 2.0
+  wall_thickness: 0.2
+  
+  physics:
+    type: "ode"
+    gravity: [0, 0, -9.8]
+    max_step_size: 0.001
+    real_time_factor: 1.0
+    real_time_update_rate: 1000
+  
+  lighting:
+    sun:
+      cast_shadows: true
+      diffuse: [1.0, 1.0, 1.0, 1.0]
+      specular: [1.0, 1.0, 1.0, 1.0]
+      pose: [0, 0, 10, 0, 0, 0]
+
+# Robot spawn configuration
+spawn_config:
+  default:
+    x: 0.0
+    y: 0.0
+    z: 0.1
+    roll: 0.0
+    pitch: 0.0
+    yaw: 0.0
+  
+  hex_arena_center:
+    x: 0.0
+    y: 0.0
+    z: 0.3
+    roll: 0.0
+    pitch: 0.0
+    yaw: 0.0
+
+# Gazebo client configuration
+gazebo:
+  server:
+    plugins:
+      - "libgazebo_ros_init.so"
+      - "libgazebo_ros_factory.so"
+      - "libgazebo_ros_force_system.so"
+  
+  client:
+    gui: true
+    headless: false
