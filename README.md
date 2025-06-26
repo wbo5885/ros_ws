@@ -12,6 +12,8 @@ This project implements a complete robot simulation ecosystem using ROS 2 and Ga
 - **Parametric Robot Design**: Fully configurable differential drive robot with laser scanner
 - **Multi-Environment Support**: Default world and custom hexagonal arena environments  
 - **Advanced Sensor Integration**: Enhanced laser scanner with noise modeling and realistic physics
+- **SLAM Mapping**: Real-time simultaneous localization and mapping using slam_toolbox
+- **Autonomous Navigation**: Complete Nav2 navigation stack with path planning and obstacle avoidance
 - **Professional Configuration Management**: YAML-based parameter configuration system
 - **Comprehensive Visualization**: Pre-configured RViz setups for development and navigation
 - **Modular Architecture**: Clean separation between robot description and simulation environments
@@ -33,9 +35,10 @@ sudo apt install ros-${ROS_DISTRO}-gazebo-ros-pkgs \
                  ros-${ROS_DISTRO}-rviz2
 ```
 
-### Optional Dependencies (for advanced features)
+### Navigation Dependencies (required for SLAM and autonomous navigation)
 ```bash
 sudo apt install ros-${ROS_DISTRO}-navigation2 \
+                 ros-${ROS_DISTRO}-nav2-bringup \
                  ros-${ROS_DISTRO}-slam-toolbox \
                  ros-${ROS_DISTRO}-turtlebot3-teleop
 ```
@@ -109,6 +112,33 @@ my_robot_simulation/
 - **Realistic Physics**: ODE physics engine with accurate material properties
 - **Advanced Lighting**: Directional lighting with shadow casting
 - **Modular Design**: Easy customization through YAML configuration
+
+### 🧭 my_robot_navigation
+**SLAM mapping and autonomous navigation package**
+
+```
+my_robot_navigation/
+├── config/
+│   ├── slam_toolbox_config.yaml # SLAM configuration
+│   └── nav2_params.yaml         # Navigation parameters
+├── launch/
+│   ├── slam.launch.py           # SLAM mapping mode
+│   ├── navigation.launch.py     # Autonomous navigation
+│   └── slam_navigation.launch.py # Unified SLAM+Nav system
+├── maps/                        # Saved map files
+│   └── my_robot_map.yaml        # Default map
+└── scripts/
+    ├── save_map.py             # Map saving utility
+    └── map_manager.py          # Map management tools
+```
+
+**Navigation Features:**
+- **SLAM Mapping**: Real-time map building using slam_toolbox
+- **Localization**: AMCL-based robot localization on known maps
+- **Path Planning**: Global and local path planning with Nav2
+- **Obstacle Avoidance**: Dynamic obstacle detection and avoidance
+- **Map Management**: Tools for saving, loading, and managing maps
+- **Multi-Mode Support**: SLAM, navigation, or combined operation
 
 ## 🎮 Usage Guide
 
@@ -191,6 +221,148 @@ rviz2 -d src/my_robot_description/rviz/robot_view.rviz
 rviz2 -d src/my_robot_description/rviz/navigation_view.rviz
 ```
 
+## 🗺️ SLAM Mapping
+
+### Starting SLAM Session
+Launch SLAM mapping in the hexagonal arena:
+```bash
+ros2 launch my_robot_navigation slam.launch.py
+```
+
+**With custom configuration:**
+```bash
+ros2 launch my_robot_navigation slam.launch.py \
+    slam_params_file:=/path/to/custom_slam_config.yaml
+```
+
+### Controlling Robot During Mapping
+Use keyboard teleop to drive the robot and build the map:
+```bash
+# In a new terminal
+ros2 run turtlebot3_teleop teleop_keyboard
+```
+
+**Manual control via topics:**
+```bash
+# Drive forward slowly
+ros2 topic pub /cmd_vel geometry_msgs/msg/Twist \
+    '{linear: {x: 0.3}, angular: {z: 0.0}}'
+
+# Turn in place for better coverage
+ros2 topic pub /cmd_vel geometry_msgs/msg/Twist \
+    '{linear: {x: 0.0}, angular: {z: 0.5}}'
+```
+
+### Saving Maps
+Save the current map during or after SLAM:
+```bash
+# Save with default name
+python3 src/my_robot_navigation/scripts/save_map.py
+
+# Save with custom name
+python3 src/my_robot_navigation/scripts/save_map.py my_custom_map
+
+# Save with timestamp
+python3 src/my_robot_navigation/scripts/save_map.py --timestamp arena_map
+```
+
+### SLAM Visualization
+Use the dedicated SLAM RViz configuration:
+```bash
+rviz2 -d src/my_robot_description/rviz/slam_view.rviz
+```
+
+## 🧭 Autonomous Navigation
+
+### Starting Navigation Mode
+Launch autonomous navigation with a pre-built map:
+```bash
+ros2 launch my_robot_navigation navigation.launch.py
+```
+
+**With custom map:**
+```bash
+ros2 launch my_robot_navigation navigation.launch.py \
+    map:=/path/to/your/map.yaml
+```
+
+### Setting Navigation Goals
+
+**Using RViz (Recommended):**
+1. Open RViz with navigation view:
+   ```bash
+   rviz2 -d src/my_robot_description/rviz/full_navigation.rviz
+   ```
+2. Use "2D Nav Goal" tool to set destination
+3. Click and drag to set goal pose and orientation
+
+**Using Command Line:**
+```bash
+ros2 topic pub /goal_pose geometry_msgs/msg/PoseStamped \
+    '{header: {frame_id: "map"}, 
+      pose: {position: {x: 2.0, y: 1.0, z: 0.0}, 
+             orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}}'
+```
+
+### Setting Initial Pose (for AMCL)
+If the robot's initial position is uncertain:
+```bash
+# Using RViz "2D Pose Estimate" tool (recommended)
+# Or via command line:
+ros2 topic pub /initialpose geometry_msgs/msg/PoseWithCovarianceStamped \
+    '{header: {frame_id: "map"}, 
+      pose: {pose: {position: {x: 0.0, y: 0.0, z: 0.0}, 
+                    orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}}}'
+```
+
+## 🔄 Combined SLAM and Navigation
+
+### Unified System Launch
+Launch both SLAM and navigation capabilities:
+```bash
+# SLAM mode only
+ros2 launch my_robot_navigation slam_navigation.launch.py mode:=slam
+
+# Navigation mode only  
+ros2 launch my_robot_navigation slam_navigation.launch.py mode:=navigation
+
+# Both SLAM and navigation (advanced)
+ros2 launch my_robot_navigation slam_navigation.launch.py mode:=both
+```
+
+**Complete system with RViz:**
+```bash
+ros2 launch my_robot_navigation slam_navigation.launch.py \
+    mode:=slam \
+    rviz:=true
+```
+
+## 🗂️ Map Management
+
+### List Available Maps
+```bash
+python3 src/my_robot_navigation/scripts/map_manager.py list
+```
+
+### Copy Maps
+```bash
+python3 src/my_robot_navigation/scripts/map_manager.py copy source_map target_map
+```
+
+### Set Default Map
+```bash
+python3 src/my_robot_navigation/scripts/map_manager.py default my_best_map
+```
+
+### Delete Maps
+```bash
+# With confirmation
+python3 src/my_robot_navigation/scripts/map_manager.py delete old_map
+
+# Force delete without confirmation
+python3 src/my_robot_navigation/scripts/map_manager.py delete old_map --force
+```
+
 ## ⚙️ Configuration Management
 
 ### Robot Parameters
@@ -217,6 +389,50 @@ spawn_config:
     x: 0.0
     y: 0.0
     z: 0.1
+```
+
+### SLAM Configuration
+Edit `src/my_robot_navigation/config/slam_toolbox_config.yaml`:
+```yaml
+slam_toolbox:
+  ros__parameters:
+    # SLAM mode and resolution
+    mode: mapping
+    resolution: 0.05
+    max_laser_range: 5.0
+    
+    # Loop closure parameters
+    do_loop_closing: true
+    loop_search_maximum_distance: 3.0
+    
+    # Performance tuning
+    minimum_travel_distance: 0.2
+    minimum_travel_heading: 0.2
+```
+
+### Navigation Configuration
+Edit `src/my_robot_navigation/config/nav2_params.yaml`:
+```yaml
+# Example key parameters
+controller_server:
+  ros__parameters:
+    controller_frequency: 20.0
+    FollowPath:
+      max_vel_x: 0.8
+      max_vel_theta: 1.0
+      
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      width: 3
+      height: 3
+      resolution: 0.05
+      
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      resolution: 0.05
+      robot_radius: 0.15
 ```
 
 ## 🔧 Development Guide
@@ -333,6 +549,68 @@ ros2 topic echo /scan --once
 - Disable unnecessary visualizations
 - Use headless mode: `gui:=false`
 
+**🔴 SLAM Issues**
+```bash
+# SLAM not building map properly
+# Check laser scan data
+ros2 topic echo /scan --once
+
+# Verify SLAM node is running
+ros2 node list | grep slam
+
+# Check transform tree
+ros2 run tf2_tools view_frames
+
+# Restart SLAM if needed
+ros2 lifecycle set /slam_toolbox configure
+ros2 lifecycle set /slam_toolbox activate
+```
+
+**🔴 Navigation Issues**
+```bash
+# Robot not reaching goals
+# Check costmaps
+ros2 topic echo /global_costmap/costmap --once
+ros2 topic echo /local_costmap/costmap --once
+
+# Verify navigation nodes
+ros2 node list | grep nav
+
+# Check goal topic
+ros2 topic echo /goal_pose --once
+
+# Reset navigation if stuck
+ros2 service call /bt_navigator/clear_entirely_global_costmap std_srvs/srv/Empty
+```
+
+**🔴 Localization Issues**
+```bash
+# AMCL not localizing properly
+# Set initial pose manually
+ros2 topic pub /initialpose geometry_msgs/msg/PoseWithCovarianceStamped \
+    '{header: {frame_id: "map"}}'
+
+# Check particle cloud
+ros2 topic echo /particle_cloud --once
+
+# Increase particle count in nav2_params.yaml:
+# max_particles: 5000
+```
+
+**🔴 Map Loading Issues**
+```bash
+# Map not loading correctly
+# Check map file exists
+ls src/my_robot_navigation/maps/
+
+# Verify map format
+head src/my_robot_navigation/maps/my_robot_map.yaml
+
+# Test map server manually
+ros2 run nav2_map_server map_server \
+    --ros-args -p yaml_filename:=path/to/map.yaml
+```
+
 ### Build Issues
 ```bash
 # Clear workspace
@@ -377,13 +655,32 @@ Configure namespaces in launch files for multi-robot setups.
 | Differential Drive | 50 Hz | CPU: ~2% |
 | Laser Scanner | 10 Hz | CPU: ~5% |
 | Robot State Publisher | 30 Hz | CPU: ~1% |
+| **SLAM Components** |  |  |
+| SLAM Toolbox | Variable | CPU: ~10-20% |
+| Map Updates | 5 Hz | Memory: ~50MB |
+| **Navigation Components** |  |  |
+| Global Planner | 1 Hz | CPU: ~3% |
+| Local Planner | 20 Hz | CPU: ~8% |
+| AMCL Localization | 2 Hz | CPU: ~5% |
+| Costmap Updates | 5 Hz | CPU: ~4% |
 
 ## 📚 Additional Resources
 
+### Core ROS 2 and Simulation
 - [ROS 2 Documentation](https://docs.ros.org/en/humble/)
 - [Gazebo Tutorials](http://gazebosim.org/tutorials)
 - [URDF Tutorials](http://wiki.ros.org/urdf/Tutorials)
+
+### SLAM and Navigation
 - [Navigation2 Documentation](https://navigation.ros.org/)
+- [SLAM Toolbox Documentation](https://github.com/SteveMacenski/slam_toolbox)
+- [Nav2 Tutorials](https://navigation.ros.org/tutorials/)
+- [AMCL Documentation](https://navigation.ros.org/configuration/packages/configuring-amcl.html)
+
+### Configuration and Tuning
+- [Nav2 Configuration Guide](https://navigation.ros.org/configuration/index.html)
+- [DWB Controller Tuning](https://navigation.ros.org/configuration/packages/dwb-params/index.html)
+- [Costmap Configuration](https://navigation.ros.org/configuration/packages/costmap-plugins/index.html)
 
 ## 🤝 Contributing
 
