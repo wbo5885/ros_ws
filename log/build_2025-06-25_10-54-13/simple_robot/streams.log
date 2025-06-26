@@ -1,0 +1,96 @@
+[0.021s] Invoking command in '/home/wb/ros_ws/build/simple_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/wb/ros_ws/src/simple_robot -DCMAKE_INSTALL_PREFIX=/home/wb/ros_ws/install/simple_robot
+[0.053s] -- Found ament_cmake_auto: 1.3.11 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.164s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.195s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.197s] -- Found ros_gz_sim: 0.244.17 (/opt/ros/humble/share/ros_gz_sim/cmake)
+[0.255s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.260s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.272s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.289s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.308s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.364s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.367s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.460s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.531s] -- Found xacro: 2.0.13 (/opt/ros/humble/share/xacro/cmake)
+[0.532s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[0.557s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.559s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.716s] -- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.759s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.797s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.801s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.809s] -- Searching for dependencies of ignition-math6
+[0.812s] -- Looking for OGRE...
+[0.820s] -- Found Ogre Ghadamon (1.9.0)
+[0.820s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.827s] -- Looking for OGRE_Paging...
+[0.827s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.827s] -- Looking for OGRE_Terrain...
+[0.827s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.827s] -- Looking for OGRE_Property...
+[0.827s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.827s] -- Looking for OGRE_RTShaderSystem...
+[0.827s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.827s] -- Looking for OGRE_Volume...
+[0.827s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.827s] -- Looking for OGRE_Overlay...
+[0.828s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[0.907s] -- Looking for ignition-math6 -- found version 6.15.1
+[0.909s] -- Looking for ignition-transport8 -- found version 8.2.1
+[0.910s] -- Searching for dependencies of ignition-transport8
+[0.924s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[0.931s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[0.935s] -- Checking for module 'libzmq >= 4'
+[0.952s] --   Found libzmq , version 4.3.4
+[0.989s] -- Checking for module 'uuid'
+[1.002s] --   Found uuid, version 2.37.2
+[1.032s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.032s] -- Searching for dependencies of ignition-msgs5
+[1.046s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.055s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.056s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.057s] -- Searching for dependencies of ignition-common3
+[1.057s] -- Looking for dlfcn.h - found
+[1.057s] -- Looking for libdl - found
+[1.069s] -- Searching for <ignition-common3> component [graphics]
+[1.070s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.071s] -- Searching for dependencies of ignition-common3-graphics
+[1.071s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.073s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.074s] -- Searching for dependencies of ignition-fuel_tools4
+[1.106s] -- Checking for module 'jsoncpp'
+[1.119s] --   Found jsoncpp, version 1.9.5
+[1.155s] -- Checking for module 'libzip'
+[1.167s] --   Found libzip, version 1.7.3
+[1.198s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.199s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.199s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.203s] -- Gazebo version: 11.10
+[1.301s] -- Configuring done
+[1.311s] -- Generating done
+[1.313s] -- Build files have been written to: /home/wb/ros_ws/build/simple_robot
+[1.322s] Invoked command in '/home/wb/ros_ws/build/simple_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/wb/ros_ws/src/simple_robot -DCMAKE_INSTALL_PREFIX=/home/wb/ros_ws/install/simple_robot
+[1.324s] Invoking command in '/home/wb/ros_ws/build/simple_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wb/ros_ws/build/simple_robot -- -j4 -l4
+[1.362s] Invoked command in '/home/wb/ros_ws/build/simple_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/wb/ros_ws/build/simple_robot -- -j4 -l4
+[1.364s] Invoking command in '/home/wb/ros_ws/build/simple_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/wb/ros_ws/build/simple_robot
+[1.371s] -- Install configuration: ""
+[1.371s] -- Execute custom install script
+[1.371s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/simple_robot/urdf/simple_robot.urdf
+[1.371s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/simple_robot/launch/gazebo.launch.py
+[1.372s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/simple_robot/worlds/my_hex_arena.world
+[1.372s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/ament_index/resource_index/package_run_dependencies/simple_robot
+[1.372s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/ament_index/resource_index/parent_prefix_path/simple_robot
+[1.373s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/simple_robot/environment/ament_prefix_path.sh
+[1.373s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/simple_robot/environment/ament_prefix_path.dsv
+[1.373s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/simple_robot/environment/path.sh
+[1.373s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/simple_robot/environment/path.dsv
+[1.374s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/simple_robot/local_setup.bash
+[1.374s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/simple_robot/local_setup.sh
+[1.375s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/simple_robot/local_setup.zsh
+[1.375s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/simple_robot/local_setup.dsv
+[1.375s] -- Symlinking: /home/wb/ros_ws/install/simple_robot/share/simple_robot/package.dsv
+[1.383s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/ament_index/resource_index/packages/simple_robot
+[1.384s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/simple_robot/cmake/simple_robotConfig.cmake
+[1.384s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/simple_robot/cmake/simple_robotConfig-version.cmake
+[1.384s] -- Up-to-date symlink: /home/wb/ros_ws/install/simple_robot/share/simple_robot/package.xml
+[1.386s] Invoked command in '/home/wb/ros_ws/build/simple_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/wb/ros_ws/build/simple_robot

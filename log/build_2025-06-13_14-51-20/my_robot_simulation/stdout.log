@@ -1,0 +1,20 @@
+-- Install configuration: ""
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/ament_index/resource_index/package_run_dependencies/my_robot_simulation
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/ament_index/resource_index/parent_prefix_path/my_robot_simulation
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/environment/ament_prefix_path.sh
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/environment/path.sh
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/environment/path.dsv
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/local_setup.bash
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/local_setup.sh
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/local_setup.zsh
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/local_setup.dsv
+-- Installing: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/package.dsv
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/ament_index/resource_index/packages/my_robot_simulation
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/cmake/my_robot_simulationConfig.cmake
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/cmake/my_robot_simulationConfig-version.cmake
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/package.xml
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/launch
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/launch/my_hex_arena.launch.py
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/worlds
+-- Up-to-date: /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/worlds/my_hex_arena.world

@@ -1,0 +1,26 @@
+[0.021s] Invoking command in '/home/wb/ros_ws/build/simple_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wb/ros_ws/build/simple_robot -- -j4 -l4
+[0.071s] Invoked command in '/home/wb/ros_ws/build/simple_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wb/ros_ws/build/simple_robot -- -j4 -l4
+[0.074s] Invoking command in '/home/wb/ros_ws/build/simple_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wb/ros_ws/build/simple_robot
+[0.079s] -- Install configuration: ""
+[0.079s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/urdf
+[0.079s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/urdf/simple_robot.urdf
+[0.079s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/launch
+[0.079s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/launch/gazebo.launch.py
+[0.080s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/worlds
+[0.080s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/worlds/my_hex_arena.world
+[0.080s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/ament_index/resource_index/package_run_dependencies/simple_robot
+[0.080s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/ament_index/resource_index/parent_prefix_path/simple_robot
+[0.080s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/environment/ament_prefix_path.sh
+[0.080s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/environment/ament_prefix_path.dsv
+[0.080s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/environment/path.sh
+[0.080s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/environment/path.dsv
+[0.080s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/local_setup.bash
+[0.080s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/local_setup.sh
+[0.081s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/local_setup.zsh
+[0.081s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/local_setup.dsv
+[0.081s] -- Installing: /home/wb/ros_ws/install/simple_robot/share/simple_robot/package.dsv
+[0.081s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/ament_index/resource_index/packages/simple_robot
+[0.081s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/cmake/simple_robotConfig.cmake
+[0.081s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/cmake/simple_robotConfig-version.cmake
+[0.082s] -- Up-to-date: /home/wb/ros_ws/install/simple_robot/share/simple_robot/package.xml
+[0.087s] Invoked command in '/home/wb/ros_ws/build/simple_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wb/ros_ws/build/simple_robot

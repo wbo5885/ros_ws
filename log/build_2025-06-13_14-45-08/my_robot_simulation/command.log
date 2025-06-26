@@ -1,0 +1,6 @@
+Invoking command in '/home/wb/ros_ws/build/my_robot_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wb/ros_ws/src/my_robot_simulation -DCMAKE_INSTALL_PREFIX=/home/wb/ros_ws/install/my_robot_simulation
+Invoked command in '/home/wb/ros_ws/build/my_robot_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/wb/ros_ws/src/my_robot_simulation -DCMAKE_INSTALL_PREFIX=/home/wb/ros_ws/install/my_robot_simulation
+Invoking command in '/home/wb/ros_ws/build/my_robot_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wb/ros_ws/build/my_robot_simulation -- -j4 -l4
+Invoked command in '/home/wb/ros_ws/build/my_robot_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/wb/ros_ws/build/my_robot_simulation -- -j4 -l4
+Invoking command in '/home/wb/ros_ws/build/my_robot_simulation': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wb/ros_ws/build/my_robot_simulation
+Invoked command in '/home/wb/ros_ws/build/my_robot_simulation' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/wb/ros_ws/build/my_robot_simulation
