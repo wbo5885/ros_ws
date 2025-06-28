@@ -206,7 +206,7 @@
       <publish_wheel_tf>false</publish_wheel_tf>
       <odometry_frame>odom</odometry_frame>
       <robot_base_frame>base_link</robot_base_frame>
-      <update_rate>50.0</update_rate>
+      <update_rate>30.0</update_rate>  <!-- Reduced for performance -->
     </plugin>
   </gazebo>
 
@@ -215,11 +215,11 @@
     <sensor type="ray" name="laser_scanner">
       <pose>0 0 0 0 0 0</pose>
       <visualize>true</visualize>
-      <update_rate>10</update_rate>
+      <update_rate>5</update_rate>  <!-- Reduced for performance -->
       <ray>
         <scan>
           <horizontal>
-            <samples>360</samples>
+            <samples>180</samples>  <!-- Reduced for performance -->
             <resolution>1</resolution>
             <min_angle>-${M_PI}</min_angle>
             <max_angle>${M_PI}</max_angle>

@@ -21,8 +21,8 @@ amcl:
     laser_min_range: 0.1
     laser_model_type: "likelihood_field"
     max_beams: 60
-    max_particles: 2000
-    min_particles: 500
+    max_particles: 1500  # Reduced for better performance
+    min_particles: 300   # Reduced for better performance
     odom_frame_id: "odom"
     pf_err: 0.05
     pf_z: 0.99
@@ -112,7 +112,7 @@ bt_navigator:
 controller_server:
   ros__parameters:
     use_sim_time: True
-    controller_frequency: 20.0
+    controller_frequency: 10.0  # Reduced for lower CPU usage
     min_x_velocity_threshold: 0.001
     min_y_velocity_threshold: 0.5
     min_theta_velocity_threshold: 0.001
@@ -152,9 +152,9 @@ controller_server:
       decel_lim_x: -2.5
       decel_lim_y: 0.0
       decel_lim_theta: -3.2
-      vx_samples: 20
+      vx_samples: 15       # Reduced for performance
       vy_samples: 1
-      vtheta_samples: 40
+      vtheta_samples: 30   # Reduced for performance
       sim_time: 1.7
       linear_granularity: 0.05
       angular_granularity: 0.025
@@ -178,8 +178,8 @@ controller_server:
 local_costmap:
   local_costmap:
     ros__parameters:
-      update_frequency: 5.0
-      publish_frequency: 2.0
+      update_frequency: 3.0  # Reduced for performance
+      publish_frequency: 1.5 # Reduced for performance
       global_frame: odom
       robot_base_frame: base_link
       use_sim_time: True
@@ -268,7 +268,7 @@ map_saver:
 
 planner_server:
   ros__parameters:
-    expected_planner_frequency: 20.0
+    expected_planner_frequency: 10.0  # Reduced for performance
     use_sim_time: True
     planner_plugins: ["GridBased"]
     GridBased:

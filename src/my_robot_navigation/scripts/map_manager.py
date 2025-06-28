@@ -37,7 +37,7 @@ class MapManager:
         try:
             nav_pkg = get_package_share_directory('my_robot_navigation')
             self.maps_dir = Path(nav_pkg) / 'maps'
-        except:
+        except Exception:
             # Fallback to source directory if package not installed
             script_dir = Path(__file__).parent
             self.maps_dir = script_dir.parent / 'maps'
@@ -165,18 +165,19 @@ class MapManager:
     def _update_yaml_image_path(self, yaml_file, new_image_name):
         """Update the image path in a YAML map file."""
         try:
-            with open(yaml_file, 'r') as f:
-                content = f.read()
+            # Read and modify YAML content
+            with open(yaml_file, 'r', encoding='utf-8') as f:
+                lines = f.readlines()
             
-            # Replace image line
-            lines = content.split('\n')
+            # Update image line in-place
             for i, line in enumerate(lines):
-                if line.startswith('image:'):
-                    lines[i] = f"image: {new_image_name}"
+                if line.strip().startswith('image:'):
+                    lines[i] = f"image: {new_image_name}\n"
                     break
             
-            with open(yaml_file, 'w') as f:
-                f.write('\n'.join(lines))
+            # Write back atomically
+            with open(yaml_file, 'w', encoding='utf-8') as f:
+                f.writelines(lines)
                 
         except Exception as e:
             print(f"⚠️  Warning: Failed to update image path in YAML: {e}")

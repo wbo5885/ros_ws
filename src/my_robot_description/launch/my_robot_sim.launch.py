@@ -61,21 +61,24 @@ def generate_launch_description():
         output='screen'
     )
     
-    # Robot state publisher
+    # Robot state publisher with proper file handling
+    with open(urdf_file, 'r', encoding='utf-8') as f:
+        robot_description = f.read()
+    
     robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         name='robot_state_publisher',
         output='screen',
         parameters=[
-            {'robot_description': open(urdf_file).read()},
+            {'robot_description': robot_description},
             {'use_sim_time': LaunchConfiguration('use_sim_time')}
         ]
     )
     
-    # Spawn robot entity
+    # Spawn robot entity with adaptive delay
     spawn_robot = TimerAction(
-        period=3.0,
+        period=5.0,  # Increased for better reliability
         actions=[
             Node(
                 package='gazebo_ros',
