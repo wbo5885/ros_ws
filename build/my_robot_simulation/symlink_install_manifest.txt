@@ -16,3 +16,4 @@
 /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/launch/combined.launch.py
 /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/launch/my_hex_arena.launch.py
 /home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/worlds/my_hex_arena.world
+/home/wb/ros_ws/install/my_robot_simulation/share/my_robot_simulation/config/simulation_params.yaml

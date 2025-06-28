@@ -310,6 +310,12 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
+# install(DIRECTORY "urdf" "worlds" "launch" "config" "rviz" "DESTINATION" "share/my_robot_description")
+ament_cmake_symlink_install_directory("/home/wb/ros_ws/src/my_robot_description" DIRECTORY "urdf" "worlds" "launch" "config" "rviz" "DESTINATION" "share/my_robot_description")
+
+# install(FILES "urdf/model.urdf" "urdf/model.config" "DESTINATION" "share/my_robot_description")
+ament_cmake_symlink_install_files("/home/wb/ros_ws/src/my_robot_description" FILES "urdf/model.urdf" "urdf/model.config" "DESTINATION" "share/my_robot_description")
+
 # install(FILES "/home/wb/ros_ws/build/my_robot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_robot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/wb/ros_ws/src/my_robot_description" FILES "/home/wb/ros_ws/build/my_robot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_robot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
@@ -351,9 +357,3 @@ ament_cmake_symlink_install_files("/home/wb/ros_ws/src/my_robot_description" FIL
 
 # install(FILES "/home/wb/ros_ws/src/my_robot_description/package.xml" "DESTINATION" "share/my_robot_description")
 ament_cmake_symlink_install_files("/home/wb/ros_ws/src/my_robot_description" FILES "/home/wb/ros_ws/src/my_robot_description/package.xml" "DESTINATION" "share/my_robot_description")
-
-# install(DIRECTORY "urdf" "worlds" "launch" "DESTINATION" "share/my_robot_description")
-ament_cmake_symlink_install_directory("/home/wb/ros_ws/src/my_robot_description" DIRECTORY "urdf" "worlds" "launch" "DESTINATION" "share/my_robot_description")
-
-# install(FILES "urdf/model.urdf" "urdf/model.config" "DESTINATION" "share/my_robot_description")
-ament_cmake_symlink_install_files("/home/wb/ros_ws/src/my_robot_description" FILES "urdf/model.urdf" "urdf/model.config" "DESTINATION" "share/my_robot_description")

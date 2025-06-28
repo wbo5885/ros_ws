@@ -357,3 +357,6 @@ ament_cmake_symlink_install_directory("/home/wb/ros_ws/src/my_robot_simulation" 
 
 # install(DIRECTORY "worlds" "DESTINATION" "share/my_robot_simulation")
 ament_cmake_symlink_install_directory("/home/wb/ros_ws/src/my_robot_simulation" DIRECTORY "worlds" "DESTINATION" "share/my_robot_simulation")
+
+# install(DIRECTORY "config" "DESTINATION" "share/my_robot_simulation")
+ament_cmake_symlink_install_directory("/home/wb/ros_ws/src/my_robot_simulation" DIRECTORY "config" "DESTINATION" "share/my_robot_simulation")
