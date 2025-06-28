@@ -180,15 +180,25 @@ def generate_launch_description():
         params_file_arg,
         autostart_arg,
         robot_simulation,
-        # Delay navigation start to ensure robot is spawned
+        # Staggered startup for better resource management
         TimerAction(
-            period=8.0,
+            period=6.0,  # Reduced delay
             actions=[
                 map_server,
                 amcl,
+            ]
+        ),
+        TimerAction(
+            period=8.0,
+            actions=[
                 controller,
                 planner,
                 behaviors,
+            ]
+        ),
+        TimerAction(
+            period=10.0,
+            actions=[
                 bt_navigator,
                 waypoint_follower,
                 velocity_smoother,

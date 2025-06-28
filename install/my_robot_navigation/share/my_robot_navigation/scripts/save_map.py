@@ -36,8 +36,14 @@ class MapSaver(Node):
         super().__init__('map_saver')
         self.client = self.create_client(SaveMap, '/slam_toolbox/save_map')
         
-        # Wait for service to be available
+        # Wait for service to be available with better timeout handling
+        timeout_counter = 0
+        max_timeout_attempts = 30  # 30 seconds total
         while not self.client.wait_for_service(timeout_sec=1.0):
+            timeout_counter += 1
+            if timeout_counter >= max_timeout_attempts:
+                self.get_logger().error('Timed out waiting for slam_toolbox save_map service')
+                raise RuntimeError('Service unavailable after 30 seconds')
             self.get_logger().info('Waiting for slam_toolbox save_map service...')
     
     def save_map(self, map_name):
@@ -101,8 +107,14 @@ def main():
             
     except KeyboardInterrupt:
         print("⏹️  Map saving interrupted by user")
+    except Exception as e:
+        print(f"❌ Unexpected error: {e}")
+        sys.exit(1)
     finally:
-        map_saver.destroy_node()
+        try:
+            map_saver.destroy_node()
+        except Exception:
+            pass  # Node may already be destroyed
         rclpy.shutdown()
 
 
