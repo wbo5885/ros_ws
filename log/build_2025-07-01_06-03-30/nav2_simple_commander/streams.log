@@ -1,0 +1,91 @@
+[0.876s] Invoking command in '/home/wb/ros_ws/src/navigation2/nav2_simple_commander': AMENT_PREFIX_PATH=/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/wb/ros_ws/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wb/ros_ws/build/nav2_simple_commander/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages:/home/wb/ros_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wb/ros_ws/install/nav2_common/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/nav2_simple_commander build --build-base /home/wb/ros_ws/build/nav2_simple_commander/build install --record /home/wb/ros_ws/build/nav2_simple_commander/install.log --single-version-externally-managed install_data
+[1.064s] running egg_info
+[1.064s] creating ../../../build/nav2_simple_commander/nav2_simple_commander.egg-info
+[1.065s] writing ../../../build/nav2_simple_commander/nav2_simple_commander.egg-info/PKG-INFO
+[1.065s] writing dependency_links to ../../../build/nav2_simple_commander/nav2_simple_commander.egg-info/dependency_links.txt
+[1.066s] writing entry points to ../../../build/nav2_simple_commander/nav2_simple_commander.egg-info/entry_points.txt
+[1.066s] writing requirements to ../../../build/nav2_simple_commander/nav2_simple_commander.egg-info/requires.txt
+[1.066s] writing top-level names to ../../../build/nav2_simple_commander/nav2_simple_commander.egg-info/top_level.txt
+[1.066s] writing manifest file '../../../build/nav2_simple_commander/nav2_simple_commander.egg-info/SOURCES.txt'
+[1.066s] reading manifest file '../../../build/nav2_simple_commander/nav2_simple_commander.egg-info/SOURCES.txt'
+[1.067s] writing manifest file '../../../build/nav2_simple_commander/nav2_simple_commander.egg-info/SOURCES.txt'
+[1.067s] running build
+[1.067s] running build_py
+[1.068s] creating /home/wb/ros_ws/build/nav2_simple_commander/build
+[1.068s] creating /home/wb/ros_ws/build/nav2_simple_commander/build/lib
+[1.068s] creating /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.068s] copying nav2_simple_commander/demo_security.py -> /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.068s] copying nav2_simple_commander/example_nav_through_poses.py -> /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.068s] copying nav2_simple_commander/example_follow_path.py -> /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.069s] copying nav2_simple_commander/line_iterator.py -> /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.069s] copying nav2_simple_commander/example_nav_to_pose.py -> /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.069s] copying nav2_simple_commander/demo_recoveries.py -> /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.069s] copying nav2_simple_commander/demo_inspection.py -> /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.069s] copying nav2_simple_commander/example_assisted_teleop.py -> /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.069s] copying nav2_simple_commander/example_waypoint_follower.py -> /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.069s] copying nav2_simple_commander/__init__.py -> /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.069s] copying nav2_simple_commander/demo_picking.py -> /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.069s] copying nav2_simple_commander/footprint_collision_checker.py -> /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.070s] copying nav2_simple_commander/costmap_2d.py -> /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.070s] copying nav2_simple_commander/robot_navigator.py -> /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander
+[1.070s] running install
+[1.070s] running install_lib
+[1.071s] creating /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[1.071s] copying /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander/demo_security.py -> /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[1.071s] copying /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander/example_nav_through_poses.py -> /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[1.071s] copying /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander/example_follow_path.py -> /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[1.071s] copying /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander/line_iterator.py -> /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[1.071s] copying /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander/example_nav_to_pose.py -> /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[1.072s] copying /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander/demo_recoveries.py -> /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[1.072s] copying /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander/demo_inspection.py -> /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[1.072s] copying /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander/example_assisted_teleop.py -> /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[1.072s] copying /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander/example_waypoint_follower.py -> /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[1.072s] copying /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander/__init__.py -> /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[1.072s] copying /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander/demo_picking.py -> /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[1.073s] copying /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander/footprint_collision_checker.py -> /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[1.073s] copying /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander/costmap_2d.py -> /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[1.073s] copying /home/wb/ros_ws/build/nav2_simple_commander/build/lib/nav2_simple_commander/robot_navigator.py -> /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander
+[1.073s] byte-compiling /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/demo_security.py to demo_security.cpython-310.pyc
+[1.074s] byte-compiling /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/example_nav_through_poses.py to example_nav_through_poses.cpython-310.pyc
+[1.074s] byte-compiling /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/example_follow_path.py to example_follow_path.cpython-310.pyc
+[1.075s] byte-compiling /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/line_iterator.py to line_iterator.cpython-310.pyc
+[1.075s] byte-compiling /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/example_nav_to_pose.py to example_nav_to_pose.cpython-310.pyc
+[1.076s] byte-compiling /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/demo_recoveries.py to demo_recoveries.cpython-310.pyc
+[1.076s] byte-compiling /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/demo_inspection.py to demo_inspection.cpython-310.pyc
+[1.076s] byte-compiling /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/example_assisted_teleop.py to example_assisted_teleop.cpython-310.pyc
+[1.077s] byte-compiling /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/example_waypoint_follower.py to example_waypoint_follower.cpython-310.pyc
+[1.077s] byte-compiling /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/__init__.py to __init__.cpython-310.pyc
+[1.077s] byte-compiling /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/demo_picking.py to demo_picking.cpython-310.pyc
+[1.078s] byte-compiling /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/footprint_collision_checker.py to footprint_collision_checker.cpython-310.pyc
+[1.078s] byte-compiling /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/costmap_2d.py to costmap_2d.cpython-310.pyc
+[1.079s] byte-compiling /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander/robot_navigator.py to robot_navigator.cpython-310.pyc
+[1.081s] running install_data
+[1.081s] creating /home/wb/ros_ws/install/nav2_simple_commander/share/ament_index
+[1.082s] creating /home/wb/ros_ws/install/nav2_simple_commander/share/ament_index/resource_index
+[1.082s] creating /home/wb/ros_ws/install/nav2_simple_commander/share/ament_index/resource_index/packages
+[1.082s] copying resource/nav2_simple_commander -> /home/wb/ros_ws/install/nav2_simple_commander/share/ament_index/resource_index/packages
+[1.082s] copying package.xml -> /home/wb/ros_ws/install/nav2_simple_commander/share/nav2_simple_commander
+[1.082s] copying launch/follow_path_example_launch.py -> /home/wb/ros_ws/install/nav2_simple_commander/share/nav2_simple_commander
+[1.082s] copying launch/waypoint_follower_example_launch.py -> /home/wb/ros_ws/install/nav2_simple_commander/share/nav2_simple_commander
+[1.082s] copying launch/nav_to_pose_example_launch.py -> /home/wb/ros_ws/install/nav2_simple_commander/share/nav2_simple_commander
+[1.082s] copying launch/security_demo_launch.py -> /home/wb/ros_ws/install/nav2_simple_commander/share/nav2_simple_commander
+[1.082s] copying launch/nav_through_poses_example_launch.py -> /home/wb/ros_ws/install/nav2_simple_commander/share/nav2_simple_commander
+[1.082s] copying launch/assisted_teleop_example_launch.py -> /home/wb/ros_ws/install/nav2_simple_commander/share/nav2_simple_commander
+[1.083s] copying launch/inspection_demo_launch.py -> /home/wb/ros_ws/install/nav2_simple_commander/share/nav2_simple_commander
+[1.083s] copying launch/recoveries_example_launch.py -> /home/wb/ros_ws/install/nav2_simple_commander/share/nav2_simple_commander
+[1.083s] copying launch/picking_demo_launch.py -> /home/wb/ros_ws/install/nav2_simple_commander/share/nav2_simple_commander
+[1.083s] copying launch/warehouse.world -> /home/wb/ros_ws/install/nav2_simple_commander/share/nav2_simple_commander
+[1.083s] running install_egg_info
+[1.084s] Copying ../../../build/nav2_simple_commander/nav2_simple_commander.egg-info to /home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages/nav2_simple_commander-1.0.0-py3.10.egg-info
+[1.084s] running install_scripts
+[1.100s] Installing demo_inspection script to /home/wb/ros_ws/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.102s] Installing demo_picking script to /home/wb/ros_ws/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.102s] Installing demo_recoveries script to /home/wb/ros_ws/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.102s] Installing demo_security script to /home/wb/ros_ws/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.102s] Installing example_assisted_teleop script to /home/wb/ros_ws/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.102s] Installing example_follow_path script to /home/wb/ros_ws/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.102s] Installing example_nav_through_poses script to /home/wb/ros_ws/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.102s] Installing example_nav_to_pose script to /home/wb/ros_ws/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.102s] Installing example_waypoint_follower script to /home/wb/ros_ws/install/nav2_simple_commander/lib/nav2_simple_commander
+[1.102s] writing list of installed files to '/home/wb/ros_ws/build/nav2_simple_commander/install.log'
+[1.118s] Invoked command in '/home/wb/ros_ws/src/navigation2/nav2_simple_commander' returned '0': AMENT_PREFIX_PATH=/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/wb/ros_ws/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wb/ros_ws/build/nav2_simple_commander/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wb/ros_ws/install/nav2_simple_commander/lib/python3.10/site-packages:/home/wb/ros_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wb/ros_ws/install/nav2_common/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/nav2_simple_commander build --build-base /home/wb/ros_ws/build/nav2_simple_commander/build install --record /home/wb/ros_ws/build/nav2_simple_commander/install.log --single-version-externally-managed install_data

@@ -1,0 +1,147 @@
+[0.018s] Invoking command in '/home/wb/ros_ws/build/nav2_amcl': AMENT_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:/home/wb/ros_ws/install/simple_robot:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/wb/ros_ws/install/nav2_util/lib:/home/wb/ros_ws/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wb/ros_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wb/ros_ws/install/nav2_common/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/wb/ros_ws/src/navigation2/nav2_amcl -DCMAKE_INSTALL_PREFIX=/home/wb/ros_ws/install/nav2_amcl
+[0.065s] -- The C compiler identification is GNU 11.4.0
+[0.115s] -- The CXX compiler identification is GNU 11.4.0
+[0.123s] -- Detecting C compiler ABI info
+[0.189s] -- Detecting C compiler ABI info - done
+[0.194s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.194s] -- Detecting C compile features
+[0.195s] -- Detecting C compile features - done
+[0.198s] -- Detecting CXX compiler ABI info
+[0.276s] -- Detecting CXX compiler ABI info - done
+[0.281s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.282s] -- Detecting CXX compile features
+[0.282s] -- Detecting CXX compile features - done
+[0.286s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.457s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.537s] -- Found nav2_common: 1.1.18 (/home/wb/ros_ws/install/nav2_common/share/nav2_common/cmake)
+[0.537s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.573s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.577s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.584s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.595s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.612s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.647s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.650s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.726s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.746s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.778s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.786s] -- Looking for pthread.h
+[0.863s] -- Looking for pthread.h - found
+[0.864s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.939s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.944s] -- Found Threads: TRUE  
+[0.989s] -- Found rclcpp_lifecycle: 16.0.12 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.014s] -- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+[1.043s] -- Found message_filters: 4.3.7 (/opt/ros/humble/share/message_filters/cmake)
+[1.044s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.066s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.067s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.067s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.129s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.138s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.150s] -- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)
+[1.159s] -- Found nav2_util: 1.1.18 (/home/wb/ros_ws/install/nav2_util/share/nav2_util/cmake)
+[1.203s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[1.220s] -- Setting build type to Release as none was specified.
+[1.221s] -- Looking for drand48
+[1.286s] -- Looking for drand48 - found
+[1.351s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.417s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.418s] -- Configured cppcheck include dirs: /home/wb/ros_ws/src/navigation2/nav2_amcl/include;/home/wb/ros_ws/src/navigation2/nav2_amcl/src/include
+[1.418s] -- Configured cppcheck exclude dirs and/or files: 
+[1.418s] -- Added test 'lint_cmake' to check CMake code style
+[1.421s] -- Added test 'uncrustify' to check C / C++ code style
+[1.422s] -- Configured uncrustify additional arguments: 
+[1.425s] -- Added test 'xmllint' to check XML markup files
+[1.425s] -- Configuring done
+[1.557s] -- Generating done
+[1.564s] -- Build files have been written to: /home/wb/ros_ws/build/nav2_amcl
+[1.575s] Invoked command in '/home/wb/ros_ws/build/nav2_amcl' returned '0': AMENT_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:/home/wb/ros_ws/install/simple_robot:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/wb/ros_ws/install/nav2_util/lib:/home/wb/ros_ws/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wb/ros_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wb/ros_ws/install/nav2_common/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/wb/ros_ws/src/navigation2/nav2_amcl -DCMAKE_INSTALL_PREFIX=/home/wb/ros_ws/install/nav2_amcl
+[1.576s] Invoking command in '/home/wb/ros_ws/build/nav2_amcl': AMENT_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:/home/wb/ros_ws/install/simple_robot:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/wb/ros_ws/install/nav2_util/lib:/home/wb/ros_ws/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wb/ros_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wb/ros_ws/install/nav2_common/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wb/ros_ws/build/nav2_amcl -- -j4 -l4
+[1.627s] [  4%] [32mBuilding C object src/map/CMakeFiles/map_lib.dir/map.c.o[0m
+[1.672s] [  8%] [32mBuilding C object src/map/CMakeFiles/map_lib.dir/map_draw.c.o[0m
+[1.694s] [ 12%] [32mBuilding CXX object src/map/CMakeFiles/map_lib.dir/map_cspace.cpp.o[0m
+[1.924s] [ 16%] [32mBuilding C object src/map/CMakeFiles/map_lib.dir/map_range.c.o[0m
+[1.988s] [ 20%] [32m[1mLinking CXX shared library libmap_lib.so[0m
+[2.054s] [ 20%] Built target map_lib
+[2.074s] [ 25%] [32mBuilding C object src/pf/CMakeFiles/pf_lib.dir/pf.c.o[0m
+[2.188s] [ 29%] [32mBuilding C object src/pf/CMakeFiles/pf_lib.dir/pf_vector.c.o[0m
+[2.233s] [ 33%] [32mBuilding C object src/pf/CMakeFiles/pf_lib.dir/eig3.c.o[0m
+[2.330s] [ 37%] [32mBuilding C object src/pf/CMakeFiles/pf_lib.dir/pf_draw.c.o[0m
+[2.350s] [ 41%] [32mBuilding C object src/pf/CMakeFiles/pf_lib.dir/pf_pdf.c.o[0m
+[2.400s] [ 45%] [32mBuilding C object src/pf/CMakeFiles/pf_lib.dir/pf_kdtree.c.o[0m
+[2.487s] [ 50%] [32m[1mLinking C shared library libpf_lib.so[0m
+[2.528s] [ 50%] Built target pf_lib
+[2.550s] [ 54%] [32mBuilding CXX object src/sensors/CMakeFiles/sensors_lib.dir/laser/laser.cpp.o[0m
+[2.781s] [ 58%] [32mBuilding CXX object src/sensors/CMakeFiles/sensors_lib.dir/laser/likelihood_field_model.cpp.o[0m
+[3.025s] [ 62%] [32mBuilding CXX object src/sensors/CMakeFiles/sensors_lib.dir/laser/likelihood_field_model_prob.cpp.o[0m
+[3.282s] [ 66%] [32mBuilding CXX object src/sensors/CMakeFiles/sensors_lib.dir/laser/beam_model.cpp.o[0m
+[3.502s] [ 70%] [32m[1mLinking CXX shared library libsensors_lib.so[0m
+[3.573s] [ 70%] Built target sensors_lib
+[3.595s] [ 75%] [32mBuilding CXX object src/motion_model/CMakeFiles/motions_lib.dir/omni_motion_model.cpp.o[0m
+[4.206s] [ 79%] [32mBuilding CXX object src/motion_model/CMakeFiles/motions_lib.dir/differential_motion_model.cpp.o[0m
+[4.814s] [ 83%] [32m[1mLinking CXX shared library libmotions_lib.so[0m
+[4.989s] [ 83%] Built target motions_lib
+[5.008s] [ 87%] [32mBuilding CXX object CMakeFiles/amcl_core.dir/src/amcl_node.cpp.o[0m
+[29.810s] [ 91%] [32m[1mLinking CXX shared library libamcl_core.so[0m
+[30.197s] [ 91%] Built target amcl_core
+[30.220s] [ 95%] [32mBuilding CXX object CMakeFiles/amcl.dir/src/main.cpp.o[0m
+[33.976s] [100%] [32m[1mLinking CXX executable amcl[0m
+[34.209s] [100%] Built target amcl
+[34.220s] Invoked command in '/home/wb/ros_ws/build/nav2_amcl' returned '0': AMENT_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:/home/wb/ros_ws/install/simple_robot:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/wb/ros_ws/install/nav2_util/lib:/home/wb/ros_ws/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wb/ros_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wb/ros_ws/install/nav2_common/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wb/ros_ws/build/nav2_amcl -- -j4 -l4
+[34.221s] Invoking command in '/home/wb/ros_ws/build/nav2_amcl': AMENT_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:/home/wb/ros_ws/install/simple_robot:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/wb/ros_ws/install/nav2_util/lib:/home/wb/ros_ws/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wb/ros_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wb/ros_ws/install/nav2_common/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wb/ros_ws/build/nav2_amcl
+[34.231s] -- Install configuration: "Release"
+[34.232s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/lib/libamcl_core.so
+[34.241s] -- Set runtime path of "/home/wb/ros_ws/install/nav2_amcl/lib/libamcl_core.so" to ""
+[34.242s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/lib/nav2_amcl/amcl
+[34.244s] -- Set runtime path of "/home/wb/ros_ws/install/nav2_amcl/lib/nav2_amcl/amcl" to ""
+[34.244s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include/
+[34.245s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl
+[34.245s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/amcl_node.hpp
+[34.246s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/motion_model
+[34.246s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/motion_model/omni_motion_model.hpp
+[34.247s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/motion_model/differential_motion_model.hpp
+[34.248s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/motion_model/motion_model.hpp
+[34.249s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/angleutils.hpp
+[34.249s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/sensors
+[34.249s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/sensors/laser
+[34.250s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/sensors/laser/laser.hpp
+[34.251s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/pf
+[34.251s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/pf/pf.hpp
+[34.252s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/pf/eig3.hpp
+[34.252s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/pf/pf_vector.hpp
+[34.253s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/pf/pf_kdtree.hpp
+[34.253s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/pf/pf_pdf.hpp
+[34.254s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/portable_utils.hpp
+[34.254s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/map
+[34.255s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/include//nav2_amcl/map/map.hpp
+[34.255s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/environment/library_path.sh
+[34.256s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/environment/library_path.dsv
+[34.256s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/plugins.xml
+[34.256s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/ament_index/resource_index/package_run_dependencies/nav2_amcl
+[34.256s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/ament_index/resource_index/parent_prefix_path/nav2_amcl
+[34.257s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/environment/ament_prefix_path.sh
+[34.257s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/environment/ament_prefix_path.dsv
+[34.258s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/environment/path.sh
+[34.258s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/environment/path.dsv
+[34.258s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/local_setup.bash
+[34.259s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/local_setup.sh
+[34.259s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/local_setup.zsh
+[34.259s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/local_setup.dsv
+[34.259s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/package.dsv
+[34.260s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/ament_index/resource_index/packages/nav2_amcl
+[34.260s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/ament_index/resource_index/nav2_amcl__pluginlib__plugin/nav2_amcl
+[34.261s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/ament_index/resource_index/rclcpp_components/nav2_amcl
+[34.261s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/cmake/ament_cmake_export_include_directories-extras.cmake
+[34.262s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/cmake/ament_cmake_export_libraries-extras.cmake
+[34.262s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/cmake/ament_cmake_export_dependencies-extras.cmake
+[34.263s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/cmake/nav2_amclConfig.cmake
+[34.263s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/cmake/nav2_amclConfig-version.cmake
+[34.263s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/share/nav2_amcl/package.xml
+[34.264s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/lib/libpf_lib.so
+[34.265s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/lib/libmap_lib.so
+[34.266s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/lib/libmotions_lib.so
+[34.267s] -- Set runtime path of "/home/wb/ros_ws/install/nav2_amcl/lib/libmotions_lib.so" to ""
+[34.267s] -- Installing: /home/wb/ros_ws/install/nav2_amcl/lib/libsensors_lib.so
+[34.268s] -- Set runtime path of "/home/wb/ros_ws/install/nav2_amcl/lib/libsensors_lib.so" to ""
+[34.271s] Invoked command in '/home/wb/ros_ws/build/nav2_amcl' returned '0': AMENT_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:/home/wb/ros_ws/install/simple_robot:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/wb/ros_ws/install/nav2_util/lib:/home/wb/ros_ws/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wb/ros_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wb/ros_ws/install/nav2_common/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wb/ros_ws/build/nav2_amcl

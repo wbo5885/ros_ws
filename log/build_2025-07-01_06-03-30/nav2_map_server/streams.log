@@ -1,0 +1,160 @@
+[0.017s] Invoking command in '/home/wb/ros_ws/build/nav2_map_server': AMENT_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:/home/wb/ros_ws/install/simple_robot:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/wb/ros_ws/install/nav2_util/lib:/home/wb/ros_ws/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wb/ros_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wb/ros_ws/install/nav2_common/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/wb/ros_ws/src/navigation2/nav2_map_server -DCMAKE_INSTALL_PREFIX=/home/wb/ros_ws/install/nav2_map_server
+[0.063s] -- The C compiler identification is GNU 11.4.0
+[0.109s] -- The CXX compiler identification is GNU 11.4.0
+[0.112s] -- Detecting C compiler ABI info
+[0.170s] -- Detecting C compiler ABI info - done
+[0.173s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.174s] -- Detecting C compile features
+[0.174s] -- Detecting C compile features - done
+[0.176s] -- Detecting CXX compiler ABI info
+[0.243s] -- Detecting CXX compiler ABI info - done
+[0.248s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.248s] -- Detecting CXX compile features
+[0.249s] -- Detecting CXX compile features - done
+[0.251s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.364s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.438s] -- Found nav2_common: 1.1.18 (/home/wb/ros_ws/install/nav2_common/share/nav2_common/cmake)
+[0.440s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.480s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.485s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.492s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.505s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.516s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.554s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.558s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.635s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.657s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.691s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.699s] -- Looking for pthread.h
+[0.764s] -- Looking for pthread.h - found
+[0.765s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.835s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.837s] -- Found Threads: TRUE  
+[0.877s] -- Found rclcpp_lifecycle: 16.0.12 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[0.890s] -- Found rclcpp_components: 16.0.12 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.911s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.932s] -- Found nav2_msgs: 1.1.18 (/home/wb/ros_ws/install/nav2_msgs/share/nav2_msgs/cmake)
+[0.970s] -- Found yaml_cpp_vendor: 8.0.2 (/opt/ros/humble/share/yaml_cpp_vendor/cmake)
+[0.979s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[0.983s] -- Found nav2_util: 1.1.18 (/home/wb/ros_ws/install/nav2_util/share/nav2_util/cmake)
+[1.027s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.028s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.028s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.052s] -- Found GRAPHICSMAGICKCPP: /usr/include/GraphicsMagick  
+[1.052s] -- Setting build type to Release as none was specified.
+[1.130s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.228s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.239s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.240s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.249s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.250s] -- Configured cppcheck include dirs: /home/wb/ros_ws/src/navigation2/nav2_map_server/include
+[1.250s] -- Configured cppcheck exclude dirs and/or files: 
+[1.252s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.253s] -- Configured cpplint exclude dirs and/or files: 
+[1.253s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.254s] -- Added test 'lint_cmake' to check CMake code style
+[1.255s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.257s] -- Added test 'uncrustify' to check C / C++ code style
+[1.258s] -- Configured uncrustify additional arguments: 
+[1.258s] -- Added test 'xmllint' to check XML markup files
+[1.261s] -- Configuring done
+[1.975s] -- Generating done
+[2.068s] -- Build files have been written to: /home/wb/ros_ws/build/nav2_map_server
+[2.115s] Invoked command in '/home/wb/ros_ws/build/nav2_map_server' returned '0': AMENT_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:/home/wb/ros_ws/install/simple_robot:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/wb/ros_ws/install/nav2_util/lib:/home/wb/ros_ws/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wb/ros_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wb/ros_ws/install/nav2_common/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/wb/ros_ws/src/navigation2/nav2_map_server -DCMAKE_INSTALL_PREFIX=/home/wb/ros_ws/install/nav2_map_server
+[2.121s] Invoking command in '/home/wb/ros_ws/build/nav2_map_server': AMENT_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:/home/wb/ros_ws/install/simple_robot:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/wb/ros_ws/install/nav2_util/lib:/home/wb/ros_ws/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wb/ros_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wb/ros_ws/install/nav2_common/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wb/ros_ws/build/nav2_map_server -- -j4 -l4
+[2.284s] [  2%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[2.290s] [  8%] [32mBuilding CXX object CMakeFiles/map_io.dir/src/map_io.cpp.o[0m
+[2.291s] [  8%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[2.292s] [ 11%] [32mBuilding CXX object CMakeFiles/map_io.dir/src/map_mode.cpp.o[0m
+[4.519s] [ 13%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[4.612s] [ 13%] Built target gtest_main
+[12.881s] [ 16%] [32m[1mLinking CXX shared library libmap_io.so[0m
+[13.201s] [ 16%] Built target map_io
+[14.043s] [ 19%] [32m[1mLinking CXX static library libgtest.a[0m
+[14.130s] [ 19%] Built target gtest
+[14.172s] [ 22%] [32mBuilding CXX object test/component/CMakeFiles/test_map_saver_publisher.dir/test_map_saver_publisher.cpp.o[0m
+[18.304s] [ 25%] [32mBuilding CXX object test/component/CMakeFiles/test_map_saver_publisher.dir/__/test_constants.cpp.o[0m
+[18.463s] [ 27%] [32m[1mLinking CXX executable test_map_saver_publisher[0m
+[18.852s] [ 27%] Built target test_map_saver_publisher
+[18.905s] [ 30%] [32mBuilding CXX object test/map_saver_cli/CMakeFiles/test_map_saver_cli.dir/test_map_saver_cli.cpp.o[0m
+[24.223s] [ 33%] [32mBuilding CXX object test/map_saver_cli/CMakeFiles/test_map_saver_cli.dir/__/test_constants.cpp.o[0m
+[24.346s] [ 36%] [32m[1mLinking CXX executable test_map_saver_cli[0m
+[24.492s] [ 36%] Built target test_map_saver_cli
+[24.514s] [ 38%] [32mBuilding CXX object test/unit/CMakeFiles/test_map_io.dir/test_map_io.cpp.o[0m
+[28.766s] [ 41%] [32mBuilding CXX object test/unit/CMakeFiles/test_map_io.dir/__/test_constants.cpp.o[0m
+[28.876s] [ 44%] [32m[1mLinking CXX executable test_map_io[0m
+[29.079s] [ 44%] Built target test_map_io
+[29.101s] [ 47%] [32mBuilding CXX object CMakeFiles/map_server_core.dir/src/map_server/map_server.cpp.o[0m
+[34.932s] [ 50%] [32mBuilding CXX object CMakeFiles/map_server_core.dir/src/costmap_filter_info/costmap_filter_info_server.cpp.o[0m
+[39.491s] [ 52%] [32mBuilding CXX object CMakeFiles/map_server_core.dir/src/map_saver/map_saver.cpp.o[0m
+[49.008s] [ 55%] [32m[1mLinking CXX shared library libmap_server_core.so[0m
+[49.335s] [ 55%] Built target map_server_core
+[49.354s] [ 58%] [32mBuilding CXX object CMakeFiles/map_server.dir/src/map_server/main.cpp.o[0m
+[52.015s] [ 61%] [32m[1mLinking CXX executable map_server[0m
+[52.269s] [ 61%] Built target map_server
+[52.289s] [ 63%] [32mBuilding CXX object CMakeFiles/costmap_filter_info_server.dir/src/costmap_filter_info/main.cpp.o[0m
+[54.762s] [ 66%] [32m[1mLinking CXX executable costmap_filter_info_server[0m
+[55.018s] [ 66%] Built target costmap_filter_info_server
+[55.037s] [ 69%] [32mBuilding CXX object test/unit/CMakeFiles/test_costmap_filter_info_server.dir/test_costmap_filter_info_server.cpp.o[0m
+[63.197s] [ 72%] [32m[1mLinking CXX executable test_costmap_filter_info_server[0m
+[63.487s] [ 72%] Built target test_costmap_filter_info_server
+[63.508s] [ 75%] [32mBuilding CXX object test/component/CMakeFiles/test_map_server_node.dir/test_map_server_node.cpp.o[0m
+[68.475s] [ 77%] [32mBuilding CXX object test/component/CMakeFiles/test_map_server_node.dir/__/test_constants.cpp.o[0m
+[68.575s] [ 80%] [32m[1mLinking CXX executable test_map_server_node[0m
+[68.766s] [ 80%] Built target test_map_server_node
+[68.787s] [ 83%] [32mBuilding CXX object test/component/CMakeFiles/test_map_saver_node.dir/test_map_saver_node.cpp.o[0m
+[73.165s] [ 86%] [32mBuilding CXX object test/component/CMakeFiles/test_map_saver_node.dir/__/test_constants.cpp.o[0m
+[73.267s] [ 88%] [32m[1mLinking CXX executable test_map_saver_node[0m
+[73.494s] [ 88%] Built target test_map_saver_node
+[73.516s] [ 91%] [32mBuilding CXX object CMakeFiles/map_saver_server.dir/src/map_saver/main_server.cpp.o[0m
+[75.960s] [ 94%] [32m[1mLinking CXX executable map_saver_server[0m
+[76.193s] [ 94%] Built target map_saver_server
+[76.212s] [ 97%] [32mBuilding CXX object CMakeFiles/map_saver_cli.dir/src/map_saver/main_cli.cpp.o[0m
+[78.671s] [100%] [32m[1mLinking CXX executable map_saver_cli[0m
+[78.904s] [100%] Built target map_saver_cli
+[78.915s] Invoked command in '/home/wb/ros_ws/build/nav2_map_server' returned '0': AMENT_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:/home/wb/ros_ws/install/simple_robot:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/wb/ros_ws/install/nav2_util/lib:/home/wb/ros_ws/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wb/ros_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wb/ros_ws/install/nav2_common/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wb/ros_ws/build/nav2_map_server -- -j4 -l4
+[78.916s] Invoking command in '/home/wb/ros_ws/build/nav2_map_server': AMENT_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:/home/wb/ros_ws/install/simple_robot:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/wb/ros_ws/install/nav2_util/lib:/home/wb/ros_ws/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wb/ros_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wb/ros_ws/install/nav2_common/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wb/ros_ws/build/nav2_map_server
+[78.921s] -- Install configuration: "Release"
+[78.922s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/lib/libmap_server_core.so
+[78.923s] -- Set runtime path of "/home/wb/ros_ws/install/nav2_map_server/lib/libmap_server_core.so" to ""
+[78.924s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/lib/libmap_io.so
+[78.924s] -- Set runtime path of "/home/wb/ros_ws/install/nav2_map_server/lib/libmap_io.so" to ""
+[78.924s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/lib/nav2_map_server/map_server
+[78.925s] -- Set runtime path of "/home/wb/ros_ws/install/nav2_map_server/lib/nav2_map_server/map_server" to ""
+[78.925s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/lib/nav2_map_server/map_saver_cli
+[78.925s] -- Set runtime path of "/home/wb/ros_ws/install/nav2_map_server/lib/nav2_map_server/map_saver_cli" to ""
+[78.925s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/lib/nav2_map_server/map_saver_server
+[78.926s] -- Set runtime path of "/home/wb/ros_ws/install/nav2_map_server/lib/nav2_map_server/map_saver_server" to ""
+[78.926s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/lib/nav2_map_server/costmap_filter_info_server
+[78.927s] -- Set runtime path of "/home/wb/ros_ws/install/nav2_map_server/lib/nav2_map_server/costmap_filter_info_server" to ""
+[78.927s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/include/
+[78.927s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/include//nav2_map_server
+[78.927s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/include//nav2_map_server/costmap_filter_info_server.hpp
+[78.927s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/include//nav2_map_server/map_saver.hpp
+[78.927s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/include//nav2_map_server/map_mode.hpp
+[78.927s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/include//nav2_map_server/map_io.hpp
+[78.927s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/include//nav2_map_server/map_server.hpp
+[78.927s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/launch
+[78.928s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/launch/map_saver_server.launch.py
+[78.929s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/environment/library_path.sh
+[78.929s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/environment/library_path.dsv
+[78.929s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/ament_index/resource_index/package_run_dependencies/nav2_map_server
+[78.929s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/ament_index/resource_index/parent_prefix_path/nav2_map_server
+[78.929s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/environment/ament_prefix_path.sh
+[78.931s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/environment/ament_prefix_path.dsv
+[78.931s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/environment/path.sh
+[78.931s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/environment/path.dsv
+[78.931s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/local_setup.bash
+[78.932s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/local_setup.sh
+[78.932s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/local_setup.zsh
+[78.932s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/local_setup.dsv
+[78.932s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/package.dsv
+[78.932s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/ament_index/resource_index/packages/nav2_map_server
+[78.932s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/ament_index/resource_index/rclcpp_components/nav2_map_server
+[78.932s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/cmake/ament_cmake_export_include_directories-extras.cmake
+[78.932s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/cmake/ament_cmake_export_libraries-extras.cmake
+[78.932s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/cmake/ament_cmake_export_dependencies-extras.cmake
+[78.932s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/cmake/nav2_map_serverConfig.cmake
+[78.932s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/cmake/nav2_map_serverConfig-version.cmake
+[78.932s] -- Installing: /home/wb/ros_ws/install/nav2_map_server/share/nav2_map_server/package.xml
+[78.933s] Invoked command in '/home/wb/ros_ws/build/nav2_map_server' returned '0': AMENT_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/nav2_util:/home/wb/ros_ws/install/nav2_msgs:/home/wb/ros_ws/install/nav2_common:/home/wb/ros_ws/install/simple_robot:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/opt/ros/humble LD_LIBRARY_PATH=/home/wb/ros_ws/install/nav2_util/lib:/home/wb/ros_ws/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wb/ros_ws/install/nav2_msgs/local/lib/python3.10/dist-packages:/home/wb/ros_ws/install/nav2_common/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wb/ros_ws/build/nav2_map_server
