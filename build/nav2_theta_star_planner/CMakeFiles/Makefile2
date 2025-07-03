@@ -178,9 +178,9 @@ CMakeFiles/nav2_theta_star_planner.dir/clean:
 # Target rules for target CMakeFiles/test_theta_star.dir
 
 # All Build rule for target.
+CMakeFiles/test_theta_star.dir/all: CMakeFiles/nav2_theta_star_planner.dir/all
 CMakeFiles/test_theta_star.dir/all: gtest/CMakeFiles/gtest.dir/all
 CMakeFiles/test_theta_star.dir/all: gtest/CMakeFiles/gtest_main.dir/all
-CMakeFiles/test_theta_star.dir/all: CMakeFiles/nav2_theta_star_planner.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_theta_star.dir/build.make CMakeFiles/test_theta_star.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_theta_star.dir/build.make CMakeFiles/test_theta_star.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wb/ros_ws/build/nav2_theta_star_planner/CMakeFiles --progress-num=8,9 "Built target test_theta_star"

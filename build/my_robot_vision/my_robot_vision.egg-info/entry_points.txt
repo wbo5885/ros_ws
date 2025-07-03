@@ -1,0 +1,3 @@
+[console_scripts]
+apple_detector = my_robot_vision.apple_detector:main
+
