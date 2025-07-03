@@ -943,7 +943,7 @@ CMakeFiles/nav2_smac_planner.dir/src/smoother.cpp.o: \
  /usr/include/c++/11/queue /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
  /usr/include/c++/11/bits/stl_queue.h \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/costmap_2d.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/costmap_2d.hpp \
  /usr/include/c++/11/mutex /usr/include/c++/11/chrono \
  /usr/include/c++/11/ratio /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \

@@ -1,0 +1,1 @@
+/home/wb/ros_ws/src/navigation2/nav2_common/nav2_common/__init__.py

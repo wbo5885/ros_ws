@@ -873,13 +873,13 @@ CMakeFiles/nav2_spin_behavior.dir/plugins/spin.cpp.o: \
  /opt/ros/humble/include/bondcpp/bondcpp/BondSM_sm.hpp \
  /opt/ros/humble/include/smclib/smclib/statemap.hpp \
  /opt/ros/humble/include/bondcpp/bondcpp/visibility_control.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/costmap_topic_collision_checker.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/costmap_topic_collision_checker.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose2_d.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__type_support.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/costmap_2d.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/costmap_2d.hpp \
  /usr/include/c++/11/queue /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
  /usr/include/c++/11/bits/stl_queue.h \
@@ -891,8 +891,8 @@ CMakeFiles/nav2_spin_behavior.dir/plugins/spin.cpp.o: \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/map_meta_data__traits.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__type_support.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/footprint_collision_checker.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/costmap_subscriber.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/footprint_collision_checker.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/costmap_subscriber.hpp \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/msg/costmap.hpp \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/msg/detail/costmap__struct.hpp \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/msg/detail/costmap_meta_data__struct.hpp \
@@ -901,8 +901,8 @@ CMakeFiles/nav2_spin_behavior.dir/plugins/spin.cpp.o: \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/msg/detail/costmap_meta_data__traits.hpp \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/msg/detail/costmap__type_support.hpp \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/footprint_subscriber.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/footprint.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/footprint_subscriber.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/footprint.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/polygon.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__type_support.hpp \

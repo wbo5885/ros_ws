@@ -1,1 +1,0 @@
-/home/wb/ros_ws/build/simple_robot/ament_cmake_core/simple_robotConfig.cmake

@@ -24,6 +24,7 @@ from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import ExecuteProcess, DeclareLaunchArgument
 from launch.substitutions import LaunchConfiguration
+from launch.conditions import IfCondition
 
 
 def generate_launch_description():
@@ -66,7 +67,7 @@ def generate_launch_description():
         cmd=['gzclient'],
         output='screen',
         emulate_tty=True,
-        condition=LaunchConfiguration('gui')  # Only launch if GUI is enabled
+        condition=IfCondition(LaunchConfiguration('gui'))  # 只有 gui:=true 时才启动
     )
     
     # Return LaunchDescription with commands to launch gzserver and gzclient

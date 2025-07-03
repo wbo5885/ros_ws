@@ -1,3 +1,1 @@
-source;share/nav2_smoother/environment/ament_prefix_path.sh
-source;share/nav2_smoother/environment/library_path.sh
-source;share/nav2_smoother/environment/path.sh
+/home/wb/ros_ws/build/nav2_smoother/ament_cmake_environment_hooks/local_setup.dsv

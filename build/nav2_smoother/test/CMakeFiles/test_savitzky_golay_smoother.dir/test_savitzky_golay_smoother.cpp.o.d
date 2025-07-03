@@ -667,7 +667,7 @@ test/CMakeFiles/test_savitzky_golay_smoother.dir/test_savitzky_golay_smoother.cp
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/costmap_2d.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/costmap_2d.hpp \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -698,7 +698,7 @@ test/CMakeFiles/test_savitzky_golay_smoother.dir/test_savitzky_golay_smoother.cp
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/occupancy_grid__type_support.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/costmap_subscriber.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/costmap_subscriber.hpp \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/msg/costmap.hpp \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/msg/detail/costmap__struct.hpp \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/msg/detail/costmap_meta_data__struct.hpp \
@@ -756,8 +756,8 @@ test/CMakeFiles/test_savitzky_golay_smoother.dir/test_savitzky_golay_smoother.cp
  /opt/ros/humble/include/bondcpp/bondcpp/visibility_control.hpp \
  /home/wb/ros_ws/src/navigation2/nav2_smoother/include/nav2_smoother/savitzky_golay_smoother.hpp \
  /home/wb/ros_ws/install/nav2_core/include/nav2_core/smoother.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/footprint_subscriber.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/footprint.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/footprint_subscriber.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/footprint.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/polygon.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.hpp \
@@ -926,7 +926,7 @@ test/CMakeFiles/test_savitzky_golay_smoother.dir/test_savitzky_golay_smoother.cp
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp \
  /home/wb/ros_ws/src/navigation2/nav2_smoother/include/nav2_smoother/smoother_utils.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/cost_values.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/cost_values.hpp \
  /home/wb/ros_ws/install/nav2_util/include/nav2_util/geometry_utils.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose2_d.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__struct.hpp \

@@ -1,3 +1,1 @@
-source;share/dwb_critics/environment/ament_prefix_path.sh
-source;share/dwb_critics/environment/library_path.sh
-source;share/dwb_critics/environment/path.sh
+/home/wb/ros_ws/build/dwb_critics/ament_cmake_environment_hooks/local_setup.dsv

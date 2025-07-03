@@ -1,1 +1,1 @@
-rclcpp;rclcpp_action;rclcpp_lifecycle;visualization_msgs;nav2_util;nav2_msgs;nav_msgs;geometry_msgs;builtin_interfaces;nav2_common;tf2_ros;nav2_costmap_2d;pluginlib;nav2_core;ament_lint_common;ament_lint_auto
+/home/wb/ros_ws/build/nav2_planner/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/nav2_planner

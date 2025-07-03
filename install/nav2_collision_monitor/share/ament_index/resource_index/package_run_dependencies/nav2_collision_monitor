@@ -1,1 +1,1 @@
-rclcpp;rclcpp_components;tf2;tf2_ros;tf2_geometry_msgs;sensor_msgs;geometry_msgs;nav2_common;nav2_util;nav2_costmap_2d;ament_cmake_gtest;ament_lint_common;ament_lint_auto
+/home/wb/ros_ws/build/nav2_collision_monitor/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/nav2_collision_monitor

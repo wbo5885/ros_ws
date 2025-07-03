@@ -1,3 +1,1 @@
-source;share/nav2_behavior_tree/environment/ament_prefix_path.sh
-source;share/nav2_behavior_tree/environment/library_path.sh
-source;share/nav2_behavior_tree/environment/path.sh
+/home/wb/ros_ws/build/nav2_behavior_tree/ament_cmake_environment_hooks/local_setup.dsv

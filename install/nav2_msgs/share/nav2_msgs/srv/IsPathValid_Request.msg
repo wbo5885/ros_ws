@@ -1,3 +1,1 @@
-#Determine if the current path is still valid
-
-nav_msgs/Path path
+/home/wb/ros_ws/build/nav2_msgs/rosidl_cmake/srv/IsPathValid_Request.msg

@@ -1,3 +1,1 @@
-float32 x
-float32 y
-float32 theta
+/home/wb/ros_ws/src/navigation2/nav2_dwb_controller/nav_2d_msgs/msg/Pose2D32.msg

@@ -1,9 +1,1 @@
-#goal definition
-float32 target_yaw
-builtin_interfaces/Duration time_allowance
----
-#result definition
-builtin_interfaces/Duration total_elapsed_time
----
-#feedback definition
-float32 angular_distance_traveled
+/home/wb/ros_ws/src/navigation2/nav2_msgs/action/Spin.action

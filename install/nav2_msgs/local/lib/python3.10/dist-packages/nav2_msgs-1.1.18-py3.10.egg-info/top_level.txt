@@ -1,1 +1,1 @@
-nav2_msgs
+/home/wb/ros_ws/build/nav2_msgs/ament_cmake_python/nav2_msgs/nav2_msgs.egg-info/top_level.txt

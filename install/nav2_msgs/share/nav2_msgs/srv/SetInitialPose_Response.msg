@@ -1,2 +1,1 @@
-
-
+/home/wb/ros_ws/build/nav2_msgs/rosidl_cmake/srv/SetInitialPose_Response.msg

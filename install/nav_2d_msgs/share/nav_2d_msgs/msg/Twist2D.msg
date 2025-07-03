@@ -1,3 +1,1 @@
-float64 x
-float64 y
-float64 theta
+/home/wb/ros_ws/src/navigation2/nav2_dwb_controller/nav_2d_msgs/msg/Twist2D.msg

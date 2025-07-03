@@ -1,0 +1,1 @@
+/home/wb/ros_ws/build/nav2_msgs/rosidl_generator_py/nav2_msgs/__init__.py

@@ -1,4 +1,1 @@
-# Get the costmap
-
-# Specifications for the requested costmap
-nav2_msgs/CostmapMetaData specs
+/home/wb/ros_ws/build/nav2_msgs/rosidl_cmake/srv/GetCostmap_Request.msg

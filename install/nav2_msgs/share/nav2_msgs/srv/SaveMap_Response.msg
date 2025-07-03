@@ -1,2 +1,1 @@
-
-bool result
+/home/wb/ros_ws/build/nav2_msgs/rosidl_cmake/srv/SaveMap_Response.msg

@@ -1,2 +1,1 @@
-
-bool success
+/home/wb/ros_ws/build/nav2_msgs/rosidl_cmake/srv/ManageLifecycleNodes_Response.msg

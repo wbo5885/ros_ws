@@ -1,12 +1,1 @@
-// generated from rosidl_generator_cpp/resource/idl.hpp.em
-// generated code does not contain a copyright notice
-
-#ifndef DWB_MSGS__SRV__GENERATE_TRAJECTORY_HPP_
-#define DWB_MSGS__SRV__GENERATE_TRAJECTORY_HPP_
-
-#include "dwb_msgs/srv/detail/generate_trajectory__struct.hpp"
-#include "dwb_msgs/srv/detail/generate_trajectory__builder.hpp"
-#include "dwb_msgs/srv/detail/generate_trajectory__traits.hpp"
-#include "dwb_msgs/srv/detail/generate_trajectory__type_support.hpp"
-
-#endif  // DWB_MSGS__SRV__GENERATE_TRAJECTORY_HPP_
+/home/wb/ros_ws/build/dwb_msgs/rosidl_generator_cpp/dwb_msgs/srv/generate_trajectory.hpp

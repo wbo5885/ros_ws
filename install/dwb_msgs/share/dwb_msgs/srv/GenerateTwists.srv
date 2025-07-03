@@ -1,4 +1,1 @@
-# For a given velocity, generate which twist commands will be evaluated
-nav_2d_msgs/Twist2D current_vel
----
-nav_2d_msgs/Twist2D[] twists
+/home/wb/ros_ws/src/navigation2/nav2_dwb_controller/dwb_msgs/srv/GenerateTwists.srv

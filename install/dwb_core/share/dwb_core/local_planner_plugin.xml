@@ -1,7 +1,1 @@
-<class_libraries>
-  <library path="dwb_core">
-    <class type="dwb_core::DWBLocalPlanner" base_class_type="nav2_core::Controller">
-      <description></description>
-    </class>
-  </library>
-</class_libraries>
+/home/wb/ros_ws/src/navigation2/nav2_dwb_controller/dwb_core/local_planner_plugin.xml

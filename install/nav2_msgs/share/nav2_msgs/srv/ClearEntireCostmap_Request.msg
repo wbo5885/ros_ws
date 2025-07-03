@@ -1,3 +1,1 @@
-# Clears all layers on the costmap
-
-std_msgs/Empty request
+/home/wb/ros_ws/build/nav2_msgs/rosidl_cmake/srv/ClearEntireCostmap_Request.msg

@@ -1,3 +1,1 @@
-# Clears the costmap within a distance
-
-float32 reset_distance
+/home/wb/ros_ws/build/nav2_msgs/rosidl_cmake/srv/ClearCostmapAroundRobot_Request.msg

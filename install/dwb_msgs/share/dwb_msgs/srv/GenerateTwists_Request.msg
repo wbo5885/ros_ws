@@ -1,2 +1,1 @@
-# For a given velocity, generate which twist commands will be evaluated
-nav_2d_msgs/Twist2D current_vel
+/home/wb/ros_ws/build/dwb_msgs/rosidl_cmake/srv/GenerateTwists_Request.msg

@@ -916,7 +916,7 @@ test/CMakeFiles/test_smoother_cost_function.dir/test_smoother_cost_function.cpp.
  /usr/include/ceres/ordered_groups.h /usr/include/ceres/problem.h \
  /usr/include/ceres/solver.h /usr/include/ceres/version.h \
  /usr/include/ceres/cubic_interpolation.h \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/costmap_2d.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/costmap_2d.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp \

@@ -1,0 +1,15 @@
+/home/wb/ros_ws/install/navigation2/share/ament_index/resource_index/package_run_dependencies/navigation2
+/home/wb/ros_ws/install/navigation2/share/ament_index/resource_index/parent_prefix_path/navigation2
+/home/wb/ros_ws/install/navigation2/share/navigation2/environment/ament_prefix_path.sh
+/home/wb/ros_ws/install/navigation2/share/navigation2/environment/ament_prefix_path.dsv
+/home/wb/ros_ws/install/navigation2/share/navigation2/environment/path.sh
+/home/wb/ros_ws/install/navigation2/share/navigation2/environment/path.dsv
+/home/wb/ros_ws/install/navigation2/share/navigation2/local_setup.bash
+/home/wb/ros_ws/install/navigation2/share/navigation2/local_setup.sh
+/home/wb/ros_ws/install/navigation2/share/navigation2/local_setup.zsh
+/home/wb/ros_ws/install/navigation2/share/navigation2/local_setup.dsv
+/home/wb/ros_ws/install/navigation2/share/navigation2/package.dsv
+/home/wb/ros_ws/install/navigation2/share/ament_index/resource_index/packages/navigation2
+/home/wb/ros_ws/install/navigation2/share/navigation2/cmake/navigation2Config.cmake
+/home/wb/ros_ws/install/navigation2/share/navigation2/cmake/navigation2Config-version.cmake
+/home/wb/ros_ws/install/navigation2/share/navigation2/package.xml

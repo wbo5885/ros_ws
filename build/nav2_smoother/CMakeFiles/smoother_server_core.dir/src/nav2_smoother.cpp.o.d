@@ -170,7 +170,7 @@ CMakeFiles/smoother_server_core.dir/src/nav2_smoother.cpp.o: \
  /usr/include/c++/11/bits/unordered_map.h \
  /usr/include/c++/11/bits/erase_if.h \
  /home/wb/ros_ws/install/nav2_core/include/nav2_core/smoother.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/costmap_subscriber.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/costmap_subscriber.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
  /usr/include/c++/11/csignal /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
@@ -629,7 +629,7 @@ CMakeFiles/smoother_server_core.dir/src/nav2_smoother.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/write_preferring_read_write_lock.hpp \
  /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/costmap_2d.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/costmap_2d.hpp \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
@@ -715,8 +715,8 @@ CMakeFiles/smoother_server_core.dir/src/nav2_smoother.cpp.o: \
  /opt/ros/humble/include/bondcpp/bondcpp/BondSM_sm.hpp \
  /opt/ros/humble/include/smclib/smclib/statemap.hpp \
  /opt/ros/humble/include/bondcpp/bondcpp/visibility_control.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/footprint_subscriber.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/footprint.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/footprint_subscriber.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/footprint.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/polygon.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.hpp \
@@ -885,7 +885,7 @@ CMakeFiles/smoother_server_core.dir/src/nav2_smoother.cpp.o: \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__builder.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__traits.hpp \
  /opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/path__type_support.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/costmap_2d_ros.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/costmap_2d_ros.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/polygon.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point32__struct.h \
@@ -898,7 +898,7 @@ CMakeFiles/smoother_server_core.dir/src/nav2_smoother.cpp.o: \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__functions.h \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon_stamped__type_support.h \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/costmap_2d_publisher.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/costmap_2d_publisher.hpp \
  /opt/ros/humble/include/map_msgs/map_msgs/msg/occupancy_grid_update.hpp \
  /opt/ros/humble/include/map_msgs/map_msgs/msg/detail/occupancy_grid_update__struct.hpp \
  /opt/ros/humble/include/map_msgs/map_msgs/msg/detail/occupancy_grid_update__builder.hpp \
@@ -912,7 +912,7 @@ CMakeFiles/smoother_server_core.dir/src/nav2_smoother.cpp.o: \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/srv/detail/get_costmap__type_support.hpp \
  /opt/ros/humble/include/tf2/tf2/transform_datatypes.h \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/clear_costmap_service.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/clear_costmap_service.hpp \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/srv/clear_costmap_except_region.hpp \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/srv/detail/clear_costmap_except_region__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/empty__struct.hpp \
@@ -930,10 +930,10 @@ CMakeFiles/smoother_server_core.dir/src/nav2_smoother.cpp.o: \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/srv/detail/clear_entire_costmap__builder.hpp \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/srv/detail/clear_entire_costmap__traits.hpp \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/srv/detail/clear_entire_costmap__type_support.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/costmap_layer.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/layer.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/layered_costmap.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/cost_values.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/costmap_layer.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/layer.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/layered_costmap.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/cost_values.hpp \
  /opt/ros/humble/include/tf2/tf2/convert.h \
  /opt/ros/humble/include/tf2/tf2/LinearMath/Transform.h \
  /opt/ros/humble/include/tf2/tf2/utils.h \
@@ -942,13 +942,13 @@ CMakeFiles/smoother_server_core.dir/src/nav2_smoother.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/quaternion.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__type_support.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/costmap_topic_collision_checker.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/costmap_topic_collision_checker.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose2_d.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__struct.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__type_support.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/footprint_collision_checker.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/footprint_collision_checker.hpp \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/action/smooth_path.hpp \
  /home/wb/ros_ws/install/nav2_msgs/include/nav2_msgs/nav2_msgs/action/detail/smooth_path__struct.hpp \
  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.hpp \
@@ -1019,22 +1019,22 @@ CMakeFiles/smoother_server_core.dir/src/nav2_smoother.cpp.o: \
  /home/wb/ros_ws/install/nav2_util/include/nav2_util/geometry_utils.hpp \
  /home/wb/ros_ws/install/nav2_util/include/nav2_util/node_utils.hpp \
  /home/wb/ros_ws/install/nav_2d_utils/include/nav_2d_utils/conversions.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/twist2_d.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/detail/twist2_d__struct.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/detail/twist2_d__builder.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/detail/twist2_d__traits.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/detail/twist2_d__type_support.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/path2_d.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/detail/path2_d__struct.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/detail/path2_d__builder.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/detail/path2_d__traits.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/detail/path2_d__type_support.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/pose2_d_stamped.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/detail/pose2_d_stamped__struct.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/detail/pose2_d_stamped__builder.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/detail/pose2_d_stamped__traits.hpp \
- /home/wb/ros_ws/install/nav_2d_msgs/include/nav_2d_msgs/nav_2d_msgs/msg/detail/pose2_d_stamped__type_support.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/twist2_d.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/detail/twist2_d__struct.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/detail/twist2_d__builder.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/detail/twist2_d__traits.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/detail/twist2_d__type_support.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/path2_d.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/detail/path2_d__struct.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/detail/path2_d__builder.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/detail/path2_d__traits.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/detail/path2_d__type_support.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/pose2_d_stamped.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/detail/pose2_d_stamped__struct.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/detail/pose2_d_stamped__builder.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/detail/pose2_d_stamped__traits.hpp \
+ /home/wb/ros_ws/build/nav_2d_msgs/rosidl_generator_cpp/nav_2d_msgs/msg/detail/pose2_d_stamped__type_support.hpp \
  /home/wb/ros_ws/install/nav_2d_utils/include/nav_2d_utils/tf_help.hpp \
  /opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_ros.h \
  /opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp \

@@ -1,2 +1,1 @@
-source;share/nav2_core/environment/ament_prefix_path.sh
-source;share/nav2_core/environment/path.sh
+/home/wb/ros_ws/build/nav2_core/ament_cmake_environment_hooks/local_setup.dsv

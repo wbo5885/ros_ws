@@ -1,16 +1,1 @@
-// generated from rosidl_adapter/resource/msg.idl.em
-// with input from nav_2d_msgs/msg/Twist2D.msg
-// generated code does not contain a copyright notice
-
-
-module nav_2d_msgs {
-  module msg {
-    struct Twist2D {
-      double x;
-
-      double y;
-
-      double theta;
-    };
-  };
-};
+/home/wb/ros_ws/build/nav_2d_msgs/rosidl_adapter/nav_2d_msgs/msg/Twist2D.idl

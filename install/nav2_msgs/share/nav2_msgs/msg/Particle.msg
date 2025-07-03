@@ -1,5 +1,1 @@
-# This represents an individual particle with weight produced by a particle filter
-
-geometry_msgs/Pose pose
-
-float64 weight
+/home/wb/ros_ws/src/navigation2/nav2_msgs/msg/Particle.msg

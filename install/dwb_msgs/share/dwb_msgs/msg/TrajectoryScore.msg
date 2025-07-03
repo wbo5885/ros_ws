@@ -1,8 +1,1 @@
-# Complete scoring for a given twist.
-
-# The trajectory being scored
-Trajectory2D traj
-# The Scores for each of the critics employed
-CriticScore[] scores
-# Convenience member that totals the critic scores
-float32 total
+/home/wb/ros_ws/src/navigation2/nav2_dwb_controller/dwb_msgs/msg/TrajectoryScore.msg

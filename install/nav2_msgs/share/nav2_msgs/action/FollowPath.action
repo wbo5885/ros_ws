@@ -1,11 +1,1 @@
-#goal definition
-nav_msgs/Path path
-string controller_id
-string goal_checker_id
----
-#result definition
-std_msgs/Empty result
----
-#feedback definition
-float32 distance_to_goal
-float32 speed
+/home/wb/ros_ws/src/navigation2/nav2_msgs/action/FollowPath.action

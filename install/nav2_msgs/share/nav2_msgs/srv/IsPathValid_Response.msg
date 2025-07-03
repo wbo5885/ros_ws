@@ -1,3 +1,1 @@
-
-bool is_valid
-int32[] invalid_pose_indices 
+/home/wb/ros_ws/build/nav2_msgs/rosidl_cmake/srv/IsPathValid_Response.msg

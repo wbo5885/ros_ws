@@ -1,2 +1,1 @@
-
-Trajectory2D traj
+/home/wb/ros_ws/build/dwb_msgs/rosidl_cmake/srv/GenerateTrajectory_Response.msg

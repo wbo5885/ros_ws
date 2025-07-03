@@ -1,6 +1,1 @@
-# This represents a particle cloud containing particle poses and weights
-
-std_msgs/Header header
-
-# Array of particles in the cloud
-Particle[] particles
+/home/wb/ros_ws/src/navigation2/nav2_msgs/msg/ParticleCloud.msg

@@ -1,6 +1,1 @@
-setup.py
-dwb_msgs/__init__.py
-dwb_msgs.egg-info/PKG-INFO
-dwb_msgs.egg-info/SOURCES.txt
-dwb_msgs.egg-info/dependency_links.txt
-dwb_msgs.egg-info/top_level.txt
+/home/wb/ros_ws/build/dwb_msgs/ament_cmake_python/dwb_msgs/dwb_msgs.egg-info/SOURCES.txt

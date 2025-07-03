@@ -221,9 +221,9 @@ CMakeFiles/planner_server.dir/clean:
 # Target rules for target test/CMakeFiles/test_dynamic_parameters.dir
 
 # All Build rule for target.
+test/CMakeFiles/test_dynamic_parameters.dir/all: CMakeFiles/planner_server_core.dir/all
 test/CMakeFiles/test_dynamic_parameters.dir/all: gtest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/test_dynamic_parameters.dir/all: gtest/CMakeFiles/gtest_main.dir/all
-test/CMakeFiles/test_dynamic_parameters.dir/all: CMakeFiles/planner_server_core.dir/all
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_dynamic_parameters.dir/build.make test/CMakeFiles/test_dynamic_parameters.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_dynamic_parameters.dir/build.make test/CMakeFiles/test_dynamic_parameters.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wb/ros_ws/build/nav2_planner/CMakeFiles --progress-num=9,10 "Built target test_dynamic_parameters"

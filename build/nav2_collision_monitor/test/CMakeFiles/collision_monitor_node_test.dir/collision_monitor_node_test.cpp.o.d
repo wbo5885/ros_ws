@@ -879,8 +879,8 @@ test/CMakeFiles/collision_monitor_node_test.dir/collision_monitor_node_test.cpp.
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/polygon.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/polygon__type_support.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/footprint_subscriber.hpp \
- /home/wb/ros_ws/install/nav2_costmap_2d/include/nav2_costmap_2d/nav2_costmap_2d/footprint.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/footprint_subscriber.hpp \
+ /home/wb/ros_ws/src/navigation2/nav2_costmap_2d/include/nav2_costmap_2d/footprint.hpp \
  /home/wb/ros_ws/src/navigation2/nav2_collision_monitor/include/nav2_collision_monitor/circle.hpp \
  /home/wb/ros_ws/src/navigation2/nav2_collision_monitor/include/nav2_collision_monitor/source.hpp \
  /home/wb/ros_ws/src/navigation2/nav2_collision_monitor/include/nav2_collision_monitor/scan.hpp \

@@ -1,7 +1,1 @@
-<class_libraries>
-  <library path="order_layer">
-    <class type="nav2_costmap_2d::OrderLayer" base_class_type="nav2_costmap_2d::Layer">
-      <description>Plugin checking order of activate() and updateBounds()/updateCosts() calls</description>
-    </class>
-  </library>
-</class_libraries>
+/home/wb/ros_ws/src/navigation2/nav2_costmap_2d/test/regression/order_layer.xml

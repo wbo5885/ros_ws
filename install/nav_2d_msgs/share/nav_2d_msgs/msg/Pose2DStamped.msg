@@ -1,2 +1,1 @@
-std_msgs/Header header
-geometry_msgs/Pose2D pose
+/home/wb/ros_ws/src/navigation2/nav2_dwb_controller/nav_2d_msgs/msg/Pose2DStamped.msg

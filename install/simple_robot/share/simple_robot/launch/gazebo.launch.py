@@ -1,1 +1,0 @@
-/home/wb/ros_ws/src/simple_robot/launch/gazebo.launch.py

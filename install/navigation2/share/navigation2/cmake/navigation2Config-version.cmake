@@ -1,0 +1,1 @@
+/home/wb/ros_ws/build/navigation2/ament_cmake_core/navigation2Config-version.cmake

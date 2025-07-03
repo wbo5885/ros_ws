@@ -1,1 +1,1 @@
-nav2_common
+/home/wb/ros_ws/build/nav2_common/ament_cmake_python/nav2_common/nav2_common.egg-info/top_level.txt

@@ -1,2 +1,1 @@
-
-nav2_msgs/Costmap map
+/home/wb/ros_ws/build/nav2_msgs/rosidl_cmake/srv/GetCostmap_Response.msg

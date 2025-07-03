@@ -1,7 +1,1 @@
-uint8 STARTUP = 0
-uint8 PAUSE = 1
-uint8 RESUME = 2
-uint8 RESET = 3
-uint8 SHUTDOWN = 4
-
-uint8 command
+/home/wb/ros_ws/build/nav2_msgs/rosidl_cmake/srv/ManageLifecycleNodes_Request.msg

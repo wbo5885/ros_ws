@@ -1,3 +1,1 @@
-geometry_msgs/PoseWithCovarianceStamped pose
----
-
+/home/wb/ros_ws/src/navigation2/nav2_msgs/srv/SetInitialPose.srv

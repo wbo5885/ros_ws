@@ -1,2 +1,1 @@
-
-std_msgs/Empty response
+/home/wb/ros_ws/build/nav2_msgs/rosidl_cmake/srv/ClearCostmapAroundRobot_Response.msg

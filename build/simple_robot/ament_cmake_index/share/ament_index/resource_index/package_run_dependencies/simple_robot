@@ -1,1 +1,0 @@
-ros_gz_sim;xacro;joint_state_publisher;robot_state_publisher;gazebo_ros;ros_gz_bridge;ament_copyright;ament_flake8;ament_pep257;python3-pytest

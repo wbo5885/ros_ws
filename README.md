@@ -45,15 +45,17 @@ sudo apt install ros-${ROS_DISTRO}-navigation2 \
 
 ## 🛠️ 安装
 
-### 配置rosdep镜像源（推荐）
-为了在中国网络环境下更快地安装依赖，建议首先配置清华大学镜像：
+### 配置rosdep官方源（推荐）
+如需恢复为ROS官方源（适合VPN或海外环境），请执行：
 ```bash
-# 设置环境变量
-export ROSDISTRO_INDEX_URL=https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml
-echo 'export ROSDISTRO_INDEX_URL=https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml' >> ~/.bashrc
+# 移除清华镜像环境变量（如之前设置过）
+sed -i '/ROSDISTRO_INDEX_URL/d' ~/.bashrc
+source ~/.bashrc
 
-# 运行配置脚本
-source ~/.ros/rosdep.sh
+# 重新初始化rosdep官方源
+sudo rm -f /etc/ros/rosdep/sources.list.d/20-default.list
+sudo rosdep init
+rosdep update
 ```
 
 ### 工作空间设置
@@ -186,8 +188,11 @@ ros2 launch my_robot_description my_robot_sim.launch.py \
 ```
 
 ### 六边形竞技场仿真
-启动完整竞技场环境：
+
+**推荐启动方式：**
 ```bash
+cd /home/wb/ros_ws
+source install/setup.bash
 ros2 launch my_robot_simulation combined.launch.py
 ```
 
@@ -198,6 +203,22 @@ ros2 launch my_robot_simulation combined.launch.py \
     spawn_y:=1.0 \
     spawn_z:=0.3
 ```
+
+> **注意（兼容性修正）**：
+> 在 ROS2 humble 及以下版本，launch 文件中如需按条件启动 gzclient，必须这样写：
+> 
+> ```python
+> from launch.conditions import IfCondition
+> ...
+> gzclient_cmd = ExecuteProcess(
+>     cmd=['gzclient'],
+>     output='screen',
+>     emulate_tty=True,
+>     condition=IfCondition(LaunchConfiguration('gui'))  # 只有 gui:=true 时才启动
+> )
+> ```
+> 
+> 不能直接用 `condition=LaunchConfiguration('gui')`，否则会报 'LaunchConfiguration' object has no attribute 'evaluate' 等兼容性错误。
 
 ### 机器人控制接口
 
@@ -388,25 +409,15 @@ ros2 topic pub /initialpose geometry_msgs/msg/PoseWithCovarianceStamped \
 
 ## 🔄 SLAM与导航一体
 
-### 一体化系统启动
-同时启动SLAM和导航功能：
+**一键启动竞技场+SLAM+导航+RViz 推荐命令：**
 ```bash
-# 仅SLAM模式
-ros2 launch my_robot_navigation slam_navigation.launch.py mode:=slam
-
-# 仅导航模式  
-ros2 launch my_robot_navigation slam_navigation.launch.py mode:=navigation
-
-# SLAM+导航（高级）
-ros2 launch my_robot_navigation slam_navigation.launch.py mode:=both
+cd /home/wb/ros_ws
+source install/setup.bash
+ros2 launch my_robot_navigation slam_navigation.launch.py mode:=both rviz:=true
 ```
 
-**带RViz的完整系统：**
-```bash
-ros2 launch my_robot_navigation slam_navigation.launch.py \
-    mode:=slam \
-    rviz:=true
-```
+- 该命令会自动启动仿真竞技场、机器人、SLAM建图、导航和RViz可视化。
+- 如只需SLAM或导航，可将mode参数改为slam或navigation。
 
 ## 🗂️ 地图管理
 
