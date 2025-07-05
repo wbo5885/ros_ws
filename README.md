@@ -9,9 +9,10 @@
 
 本项目基于 ROS 2 和 Gazebo 实现了完整的机器人仿真生态系统，主要特性包括：
 
-- **参数化机器人设计**：可完全配置的差速驱动机器人，带激光雷达
+- **参数化机器人设计**：可完全配置的差速驱动机器人，带激光雷达和相机
 - **多环境支持**：默认世界和自定义六边形竞技场环境
 - **高级传感器集成**：带噪声建模和真实物理的增强型激光雷达
+- **计算机视觉**：基于YOLOv8的实时目标检测系统
 - **SLAM 建图**：基于 slam_toolbox 的实时同步定位与建图
 - **自主导航**：完整的 Nav2 导航栈，支持路径规划与避障
 - **专业配置管理**：基于 YAML 的参数配置系统
@@ -41,6 +42,18 @@ sudo apt install ros-${ROS_DISTRO}-navigation2 \
                  ros-${ROS_DISTRO}-nav2-bringup \
                  ros-${ROS_DISTRO}-slam-toolbox \
                  ros-${ROS_DISTRO}-turtlebot3-teleop
+```
+
+### 计算机视觉依赖（苹果检测系统所需）
+```bash
+# Python依赖
+pip3 install ultralytics
+pip3 install opencv-python
+pip3 install numpy
+pip3 install torch torchvision
+
+# ROS2图像桥接
+sudo apt install ros-${ROS_DISTRO}-cv-bridge python3-cv-bridge
 ```
 
 ## 🛠️ 安装
@@ -166,6 +179,28 @@ my_robot_navigation/
 - **避障**：动态障碍物检测与避让
 - **地图管理**：地图保存、加载与管理工具
 - **多模式支持**：SLAM、导航或组合运行
+
+### 👁️ my_robot_vision
+**计算机视觉与目标检测包**
+
+```
+my_robot_vision/
+├── my_robot_vision/
+│   └── apple_detector.py       # YOLOv8苹果检测节点
+├── test/                       # 测试文件
+├── resource/                   # 资源文件
+├── setup.py                    # 包配置
+├── package.xml                 # 包元数据
+└── requirements.txt            # Python依赖
+```
+
+**视觉特性：**
+- **YOLOv8检测**：基于深度学习的目标检测
+- **OpenCV集成**：实时图像处理和分析
+- **ROS2集成**：无缝集成ROS2话题系统
+- **HSV备选**：传统颜色检测作为备选方案
+- **实时显示**：实时显示检测结果和置信度
+- **多模型支持**：支持自定义训练模型
 
 ## 🎮 使用指南
 
@@ -311,6 +346,153 @@ rviz2 -d src/my_robot_description/rviz/robot_view.rviz
 **导航视图：**
 ```bash
 rviz2 -d src/my_robot_description/rviz/navigation_view.rviz
+```
+
+## 🍎 苹果检测系统
+
+### 系统概述
+基于YOLOv8的苹果检测系统，集成OpenCV和ROS2，支持实时图像处理和目标检测。
+
+### 安装依赖
+```bash
+# 进入工作空间
+cd /home/wb/ros_ws
+
+# 安装YOLOv8和相关依赖
+pip3 install ultralytics
+pip3 install opencv-python
+pip3 install numpy
+pip3 install torch torchvision
+
+# 安装ROS2图像桥接
+sudo apt update
+sudo apt install ros-humble-cv-bridge python3-cv-bridge
+```
+
+### 构建苹果检测包
+```bash
+# 构建苹果检测包
+colcon build --packages-select my_robot_vision
+
+# 设置环境
+source install/setup.bash
+```
+
+### 启动苹果检测系统
+
+**完整启动流程（推荐）：**
+
+**终端1 - 启动六边形竞技场仿真：**
+```bash
+cd /home/wb/ros_ws
+source install/setup.bash
+ros2 launch my_robot_simulation combined.launch.py gui:=true
+```
+
+**终端2 - 启动苹果检测节点：**
+```bash
+cd /home/wb/ros_ws
+source install/setup.bash
+ros2 run my_robot_vision apple_detector
+```
+
+**终端3 - 如果GUI没有自动启动，手动启动：**
+```bash
+gzclient
+```
+
+**终端4 - 启动RViz可视化（可选）：**
+```bash
+cd /home/wb/ros_ws
+source install/setup.bash
+rviz2 -d src/my_robot_description/rviz/robot_view.rviz
+```
+
+**终端5 - 控制机器人移动（可选）：**
+```bash
+cd /home/wb/ros_ws
+source install/setup.bash
+ros2 run turtlebot3_teleop teleop_keyboard
+```
+
+### 无GUI模式启动（适用于远程服务器）
+```bash
+# 启动无GUI仿真
+cd /home/wb/ros_ws
+source install/setup.bash
+ros2 launch my_robot_simulation combined.launch.py gui:=false
+
+# 在另一个终端启动苹果检测
+cd /home/wb/ros_ws
+source install/setup.bash
+ros2 run my_robot_vision apple_detector
+```
+
+### 机器人控制命令
+```bash
+# 前进
+ros2 topic pub /cmd_vel geometry_msgs/msg/Twist '{linear: {x: 0.3}, angular: {z: 0.0}}' --once
+
+# 左转
+ros2 topic pub /cmd_vel geometry_msgs/msg/Twist '{linear: {x: 0.0}, angular: {z: 0.5}}' --once
+
+# 右转
+ros2 topic pub /cmd_vel geometry_msgs/msg/Twist '{linear: {x: 0.0}, angular: {z: -0.5}}' --once
+
+# 停止
+ros2 topic pub /cmd_vel geometry_msgs/msg/Twist '{linear: {x: 0.0}, angular: {z: 0.0}}' --once
+```
+
+### 系统验证
+```bash
+# 检查所有话题
+ros2 topic list
+
+# 检查相机话题
+ros2 topic echo /camera/image_raw --once
+
+# 检查激光雷达数据
+ros2 topic echo /scan --once
+
+# 查看所有节点
+ros2 node list
+
+# 验证模型文件
+ls -la /home/wb/ros_ws/yolov8_apple_custom.pt
+```
+
+### 预期结果
+- **Gazebo界面**：显示六边形竞技场和机器人
+- **苹果检测窗口**：显示相机图像和YOLOv8检测结果
+- **RViz界面**：显示机器人的激光雷达数据和TF树
+- **终端输出**：显示模型加载成功和检测结果
+
+### 故障排除
+```bash
+# 检查Gazebo进程
+ps aux | grep gazebo
+
+# 检查ROS2节点
+ros2 node list
+
+# 检查话题
+ros2 topic list
+
+# 测试模型加载
+python3 -c "from ultralytics import YOLO; model = YOLO('/home/wb/ros_ws/yolov8_apple_custom.pt'); print('Model loaded successfully')"
+```
+
+### 停止系统
+```bash
+# 停止所有ROS2节点
+ros2 node kill /apple_detector
+ros2 node kill /robot_state_publisher
+
+# 停止Gazebo
+pkill gzserver
+pkill gzclient
+
+# 或者使用Ctrl+C停止各个终端
 ```
 
 ## 🗺️ SLAM建图

@@ -1,0 +1,21 @@
+[0.454s] Invoking command in '/home/wb/ros_ws/src/my_robot_vision': PYTHONPATH=/home/wb/ros_ws/build/my_robot_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wb/ros_ws/install/my_robot_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_robot_vision build --build-base /home/wb/ros_ws/build/my_robot_vision/build install --record /home/wb/ros_ws/build/my_robot_vision/install.log --single-version-externally-managed install_data
+[0.628s] running egg_info
+[0.629s] writing ../../build/my_robot_vision/my_robot_vision.egg-info/PKG-INFO
+[0.629s] writing dependency_links to ../../build/my_robot_vision/my_robot_vision.egg-info/dependency_links.txt
+[0.629s] writing entry points to ../../build/my_robot_vision/my_robot_vision.egg-info/entry_points.txt
+[0.629s] writing requirements to ../../build/my_robot_vision/my_robot_vision.egg-info/requires.txt
+[0.630s] writing top-level names to ../../build/my_robot_vision/my_robot_vision.egg-info/top_level.txt
+[0.631s] reading manifest file '../../build/my_robot_vision/my_robot_vision.egg-info/SOURCES.txt'
+[0.632s] writing manifest file '../../build/my_robot_vision/my_robot_vision.egg-info/SOURCES.txt'
+[0.633s] running build
+[0.633s] running build_py
+[0.633s] running install
+[0.633s] running install_lib
+[0.634s] running install_data
+[0.635s] running install_egg_info
+[0.636s] removing '/home/wb/ros_ws/install/my_robot_vision/lib/python3.10/site-packages/my_robot_vision-0.0.0-py3.10.egg-info' (and everything under it)
+[0.637s] Copying ../../build/my_robot_vision/my_robot_vision.egg-info to /home/wb/ros_ws/install/my_robot_vision/lib/python3.10/site-packages/my_robot_vision-0.0.0-py3.10.egg-info
+[0.637s] running install_scripts
+[0.652s] Installing apple_detector script to /home/wb/ros_ws/install/my_robot_vision/lib/my_robot_vision
+[0.653s] writing list of installed files to '/home/wb/ros_ws/build/my_robot_vision/install.log'
+[0.666s] Invoked command in '/home/wb/ros_ws/src/my_robot_vision' returned '0': PYTHONPATH=/home/wb/ros_ws/build/my_robot_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wb/ros_ws/install/my_robot_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_robot_vision build --build-base /home/wb/ros_ws/build/my_robot_vision/build install --record /home/wb/ros_ws/build/my_robot_vision/install.log --single-version-externally-managed install_data

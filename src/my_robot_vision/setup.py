@@ -11,7 +11,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools', 'ultralytics', 'torch', 'torchvision'],
     zip_safe=True,
     maintainer='wb',
     maintainer_email='1878087979@qq.com',
