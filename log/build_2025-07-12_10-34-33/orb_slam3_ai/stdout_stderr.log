@@ -1,0 +1,44 @@
+running egg_info
+creating ../../build/orb_slam3_ai/orb_slam3_ai.egg-info
+writing ../../build/orb_slam3_ai/orb_slam3_ai.egg-info/PKG-INFO
+writing dependency_links to ../../build/orb_slam3_ai/orb_slam3_ai.egg-info/dependency_links.txt
+writing entry points to ../../build/orb_slam3_ai/orb_slam3_ai.egg-info/entry_points.txt
+writing requirements to ../../build/orb_slam3_ai/orb_slam3_ai.egg-info/requires.txt
+writing top-level names to ../../build/orb_slam3_ai/orb_slam3_ai.egg-info/top_level.txt
+writing manifest file '../../build/orb_slam3_ai/orb_slam3_ai.egg-info/SOURCES.txt'
+reading manifest file '../../build/orb_slam3_ai/orb_slam3_ai.egg-info/SOURCES.txt'
+writing manifest file '../../build/orb_slam3_ai/orb_slam3_ai.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/wb/ros_ws/build/orb_slam3_ai/build
+creating /home/wb/ros_ws/build/orb_slam3_ai/build/lib
+creating /home/wb/ros_ws/build/orb_slam3_ai/build/lib/orb_slam3_ai
+copying orb_slam3_ai/orb_slam3_ai_node.py -> /home/wb/ros_ws/build/orb_slam3_ai/build/lib/orb_slam3_ai
+copying orb_slam3_ai/slam_ai_optimizer.py -> /home/wb/ros_ws/build/orb_slam3_ai/build/lib/orb_slam3_ai
+copying orb_slam3_ai/__init__.py -> /home/wb/ros_ws/build/orb_slam3_ai/build/lib/orb_slam3_ai
+running install
+running install_lib
+creating /home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages/orb_slam3_ai
+copying /home/wb/ros_ws/build/orb_slam3_ai/build/lib/orb_slam3_ai/orb_slam3_ai_node.py -> /home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages/orb_slam3_ai
+copying /home/wb/ros_ws/build/orb_slam3_ai/build/lib/orb_slam3_ai/slam_ai_optimizer.py -> /home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages/orb_slam3_ai
+copying /home/wb/ros_ws/build/orb_slam3_ai/build/lib/orb_slam3_ai/__init__.py -> /home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages/orb_slam3_ai
+byte-compiling /home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages/orb_slam3_ai/orb_slam3_ai_node.py to orb_slam3_ai_node.cpython-310.pyc
+byte-compiling /home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages/orb_slam3_ai/slam_ai_optimizer.py to slam_ai_optimizer.cpython-310.pyc
+byte-compiling /home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages/orb_slam3_ai/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/wb/ros_ws/install/orb_slam3_ai/share/ament_index
+creating /home/wb/ros_ws/install/orb_slam3_ai/share/ament_index/resource_index
+creating /home/wb/ros_ws/install/orb_slam3_ai/share/ament_index/resource_index/packages
+copying resource/orb_slam3_ai -> /home/wb/ros_ws/install/orb_slam3_ai/share/ament_index/resource_index/packages
+copying package.xml -> /home/wb/ros_ws/install/orb_slam3_ai/share/orb_slam3_ai
+creating /home/wb/ros_ws/install/orb_slam3_ai/share/orb_slam3_ai/launch
+copying launch/orb_slam3_ai.launch.py -> /home/wb/ros_ws/install/orb_slam3_ai/share/orb_slam3_ai/launch
+creating /home/wb/ros_ws/install/orb_slam3_ai/share/orb_slam3_ai/config
+copying config/orb_slam3_params.yaml -> /home/wb/ros_ws/install/orb_slam3_ai/share/orb_slam3_ai/config
+creating /home/wb/ros_ws/install/orb_slam3_ai/share/orb_slam3_ai/rviz
+copying rviz/orb_slam3_ai.rviz -> /home/wb/ros_ws/install/orb_slam3_ai/share/orb_slam3_ai/rviz
+running install_egg_info
+Copying ../../build/orb_slam3_ai/orb_slam3_ai.egg-info to /home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages/orb_slam3_ai-1.0.0-py3.10.egg-info
+running install_scripts
+Installing orb_slam3_ai_node script to /home/wb/ros_ws/install/orb_slam3_ai/lib/orb_slam3_ai
+writing list of installed files to '/home/wb/ros_ws/build/orb_slam3_ai/install.log'

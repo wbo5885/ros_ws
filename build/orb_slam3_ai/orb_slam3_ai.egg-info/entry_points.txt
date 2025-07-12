@@ -1,0 +1,3 @@
+[console_scripts]
+orb_slam3_ai_node = orb_slam3_ai.orb_slam3_ai_node:main
+

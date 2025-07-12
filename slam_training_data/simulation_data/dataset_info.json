@@ -1,0 +1,56 @@
+{
+  "created_at": "2025-07-12T14:55:06.049065",
+  "total_samples": 14,
+  "data_directory": "/home/wb/ros_ws/slam_training_data/simulation_data",
+  "collection_parameters": {
+    "collection_interval": 2.0,
+    "max_samples": 500,
+    "motion_patterns": [
+      {
+        "linear": 0.2,
+        "angular": 0.0,
+        "duration": 3.0,
+        "env_type": "normal"
+      },
+      {
+        "linear": 0.0,
+        "angular": 0.3,
+        "duration": 2.0,
+        "env_type": "fast_motion"
+      },
+      {
+        "linear": 0.1,
+        "angular": 0.1,
+        "duration": 4.0,
+        "env_type": "normal"
+      },
+      {
+        "linear": 0.0,
+        "angular": 0.0,
+        "duration": 2.0,
+        "env_type": "static"
+      },
+      {
+        "linear": -0.1,
+        "angular": 0.0,
+        "duration": 2.0,
+        "env_type": "normal"
+      }
+    ]
+  },
+  "statistics": {
+    "scene_type_distribution": {
+      "normal": 10,
+      "fast_motion": 2,
+      "static": 2
+    },
+    "motion_type_distribution": {
+      "fast_translation": 4,
+      "fast_rotation": 2,
+      "slow_motion": 6,
+      "static": 2
+    },
+    "average_performance_score": 0.8121349082710232,
+    "total_samples": 14
+  }
+}

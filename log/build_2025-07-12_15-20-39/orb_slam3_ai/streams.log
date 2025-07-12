@@ -1,0 +1,28 @@
+[0.640s] Invoking command in '/home/wb/ros_ws/src/orb_slam3_ai': PYTHONPATH=/home/wb/ros_ws/build/orb_slam3_ai/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/orb_slam3_ai build --build-base /home/wb/ros_ws/build/orb_slam3_ai/build install --record /home/wb/ros_ws/build/orb_slam3_ai/install.log --single-version-externally-managed install_data
+[0.861s] running egg_info
+[0.861s] writing ../../build/orb_slam3_ai/orb_slam3_ai.egg-info/PKG-INFO
+[0.861s] writing dependency_links to ../../build/orb_slam3_ai/orb_slam3_ai.egg-info/dependency_links.txt
+[0.861s] writing entry points to ../../build/orb_slam3_ai/orb_slam3_ai.egg-info/entry_points.txt
+[0.861s] writing requirements to ../../build/orb_slam3_ai/orb_slam3_ai.egg-info/requires.txt
+[0.861s] writing top-level names to ../../build/orb_slam3_ai/orb_slam3_ai.egg-info/top_level.txt
+[0.863s] reading manifest file '../../build/orb_slam3_ai/orb_slam3_ai.egg-info/SOURCES.txt'
+[0.863s] writing manifest file '../../build/orb_slam3_ai/orb_slam3_ai.egg-info/SOURCES.txt'
+[0.864s] running build
+[0.864s] running build_py
+[0.864s] copying orb_slam3_ai/orb_slam3_ai_node.py -> /home/wb/ros_ws/build/orb_slam3_ai/build/lib/orb_slam3_ai
+[0.864s] copying orb_slam3_ai/slam_ai_optimizer.py -> /home/wb/ros_ws/build/orb_slam3_ai/build/lib/orb_slam3_ai
+[0.864s] running install
+[0.865s] running install_lib
+[0.866s] copying /home/wb/ros_ws/build/orb_slam3_ai/build/lib/orb_slam3_ai/orb_slam3_ai_node.py -> /home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages/orb_slam3_ai
+[0.866s] copying /home/wb/ros_ws/build/orb_slam3_ai/build/lib/orb_slam3_ai/slam_ai_optimizer.py -> /home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages/orb_slam3_ai
+[0.866s] byte-compiling /home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages/orb_slam3_ai/orb_slam3_ai_node.py to orb_slam3_ai_node.cpython-310.pyc
+[0.868s] byte-compiling /home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages/orb_slam3_ai/slam_ai_optimizer.py to slam_ai_optimizer.cpython-310.pyc
+[0.869s] Sorry: IndentationError: unindent does not match any outer indentation level (slam_ai_optimizer.py, line 426)
+[0.869s] running install_data
+[0.869s] running install_egg_info
+[0.871s] removing '/home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages/orb_slam3_ai-1.0.0-py3.10.egg-info' (and everything under it)
+[0.871s] Copying ../../build/orb_slam3_ai/orb_slam3_ai.egg-info to /home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages/orb_slam3_ai-1.0.0-py3.10.egg-info
+[0.872s] running install_scripts
+[0.897s] Installing orb_slam3_ai_node script to /home/wb/ros_ws/install/orb_slam3_ai/lib/orb_slam3_ai
+[0.898s] writing list of installed files to '/home/wb/ros_ws/build/orb_slam3_ai/install.log'
+[0.919s] Invoked command in '/home/wb/ros_ws/src/orb_slam3_ai' returned '0': PYTHONPATH=/home/wb/ros_ws/build/orb_slam3_ai/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/wb/ros_ws/install/orb_slam3_ai/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/orb_slam3_ai build --build-base /home/wb/ros_ws/build/orb_slam3_ai/build install --record /home/wb/ros_ws/build/orb_slam3_ai/install.log --single-version-externally-managed install_data

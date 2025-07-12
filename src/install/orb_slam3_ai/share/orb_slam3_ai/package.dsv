@@ -1,0 +1,9 @@
+source;share/orb_slam3_ai/hook/pythonpath.ps1
+source;share/orb_slam3_ai/hook/pythonpath.dsv
+source;share/orb_slam3_ai/hook/pythonpath.sh
+source;share/orb_slam3_ai/hook/ament_prefix_path.ps1
+source;share/orb_slam3_ai/hook/ament_prefix_path.dsv
+source;share/orb_slam3_ai/hook/ament_prefix_path.sh
+source;../../build/orb_slam3_ai/share/orb_slam3_ai/hook/pythonpath_develop.ps1
+source;../../build/orb_slam3_ai/share/orb_slam3_ai/hook/pythonpath_develop.dsv
+source;../../build/orb_slam3_ai/share/orb_slam3_ai/hook/pythonpath_develop.sh

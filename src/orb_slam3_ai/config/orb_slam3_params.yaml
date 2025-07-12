@@ -1,0 +1,84 @@
+orb_slam3_ai_node:
+  ros__parameters:
+    # 优化器参数
+    optimization_frequency: 0.5  # Hz - AI参数优化频率
+    use_sim_time: true
+    
+    # 坐标系配置
+    camera_frame: "camera_optical_link"
+    base_frame: "base_link"
+    map_frame: "map"
+    odom_frame: "odom"
+    
+    # 相机参数（与你的RGB-D相机匹配）
+    camera_params:
+      fx: 525.0
+      fy: 525.0
+      cx: 319.5
+      cy: 239.5
+      k1: 0.0
+      k2: 0.0
+      p1: 0.0
+      p2: 0.0
+      k3: 0.0
+      
+    # RGB-D传感器参数
+    depth_params:
+      depth_map_factor: 1000.0  # 深度值缩放因子
+      depth_threshold: 8.0      # 最大有效深度 (m)
+      min_depth: 0.1           # 最小有效深度 (m)
+      
+    # AI优化器参数
+    ai_optimizer:
+      adaptation_rate: 0.2      # 参数调整幅度
+      performance_window: 10    # 性能评估窗口大小
+      max_history_length: 50    # 历史数据最大长度
+      
+    # ORB-SLAM3基础参数范围
+    param_ranges:
+      nFeatures:
+        min: 200
+        max: 2000
+        default: 1000
+      scaleFactor:
+        min: 1.05
+        max: 2.0
+        default: 1.2
+      nLevels:
+        min: 4
+        max: 12
+        default: 8
+      thRefRatio:
+        min: 0.1
+        max: 1.0
+        default: 0.75
+        
+    # 性能监控参数
+    performance_monitor:
+      tracking_quality_threshold: 0.7
+      mapping_quality_threshold: 0.6
+      max_lost_frames: 30
+      performance_log_interval: 5.0  # 秒
+      
+    # 环境分类阈值
+    environment_thresholds:
+      low_light_brightness: 0.3
+      low_texture_density: 0.2
+      high_texture_density: 0.8
+      fast_motion_threshold: 0.3
+      high_angular_velocity: 0.5
+      
+    # 发布器配置
+    publishers:
+      pose_topic: "/orb_slam3/pose"
+      path_topic: "/orb_slam3/path"
+      map_points_topic: "/orb_slam3/map_points"
+      performance_topic: "/orb_slam3/performance"
+      env_type_topic: "/orb_slam3/environment_type"
+      
+    # 订阅器配置
+    subscribers:
+      rgb_topic: "/camera/image_raw"
+      depth_topic: "/camera/depth/image_raw"
+      camera_info_topic: "/camera/camera_info"
+      odom_topic: "/odom"
