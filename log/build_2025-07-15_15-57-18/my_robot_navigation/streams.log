@@ -1,0 +1,35 @@
+[0.012s] Invoking command in '/home/wb/ros_ws/build/my_robot_navigation': CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/orb_slam3_ai:/home/wb/ros_ws/install/my_robot_vision:/opt/ros/humble /usr/bin/cmake --build /home/wb/ros_ws/build/my_robot_navigation -- -j4 -l4
+[0.048s] Invoked command in '/home/wb/ros_ws/build/my_robot_navigation' returned '0': CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/orb_slam3_ai:/home/wb/ros_ws/install/my_robot_vision:/opt/ros/humble /usr/bin/cmake --build /home/wb/ros_ws/build/my_robot_navigation -- -j4 -l4
+[0.048s] Invoking command in '/home/wb/ros_ws/build/my_robot_navigation': CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/orb_slam3_ai:/home/wb/ros_ws/install/my_robot_vision:/opt/ros/humble /usr/bin/cmake --install /home/wb/ros_ws/build/my_robot_navigation
+[0.056s] -- Install configuration: ""
+[0.056s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/launch
+[0.056s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/launch/slam_navigation.launch.py
+[0.056s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/launch/navigation.launch.py
+[0.056s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/launch/slam.launch.py
+[0.056s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/config
+[0.056s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/config/slam_toolbox_config.yaml
+[0.056s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/config/nav2_params.yaml
+[0.056s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/maps
+[0.056s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/maps/my_hex_arena.yaml
+[0.056s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/maps/my_hex_arena.pgm
+[0.056s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/maps/my_robot_map.pgm
+[0.056s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/maps/my_robot_map.yaml
+[0.056s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/scripts
+[0.056s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/scripts/save_map.py
+[0.056s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/scripts/map_manager.py
+[0.057s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/ament_index/resource_index/package_run_dependencies/my_robot_navigation
+[0.057s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/ament_index/resource_index/parent_prefix_path/my_robot_navigation
+[0.057s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/environment/ament_prefix_path.sh
+[0.057s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/environment/ament_prefix_path.dsv
+[0.057s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/environment/path.sh
+[0.057s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/environment/path.dsv
+[0.057s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/local_setup.bash
+[0.057s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/local_setup.sh
+[0.057s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/local_setup.zsh
+[0.057s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/local_setup.dsv
+[0.057s] -- Installing: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/package.dsv
+[0.057s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/ament_index/resource_index/packages/my_robot_navigation
+[0.057s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/cmake/my_robot_navigationConfig.cmake
+[0.057s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/cmake/my_robot_navigationConfig-version.cmake
+[0.057s] -- Up-to-date: /home/wb/ros_ws/install/my_robot_navigation/share/my_robot_navigation/package.xml
+[0.059s] Invoked command in '/home/wb/ros_ws/build/my_robot_navigation' returned '0': CMAKE_PREFIX_PATH=/home/wb/ros_ws/install/my_robot_simulation:/home/wb/ros_ws/install/my_robot_description:/home/wb/ros_ws/install/my_robot_navigation:/home/wb/ros_ws/install/orb_slam3_ai:/home/wb/ros_ws/install/my_robot_vision:/opt/ros/humble /usr/bin/cmake --install /home/wb/ros_ws/build/my_robot_navigation

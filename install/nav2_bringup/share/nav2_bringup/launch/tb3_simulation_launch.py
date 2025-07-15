@@ -1,1 +1,0 @@
-/home/wb/ros_ws/src/navigation2/nav2_bringup/launch/tb3_simulation_launch.py

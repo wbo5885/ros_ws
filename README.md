@@ -631,7 +631,7 @@ source install/setup.bash
 cd /home/wb/ros_ws
 source install/setup.bash
 # 启动机器人仿真环境 + 传统slam_toolbox SLAM + RViz可视化
-ros2 launch my_robot_navigation slam_navigation.launch.py mode:=slam rviz:=true
+ros2 launch my_robot_navigation slam_navigation.launch.py mode:=both rviz:=true
 ```
 
 **终端2 - 启动AI增强ORB-SLAM3系统：**

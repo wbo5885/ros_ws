@@ -1,1 +1,50 @@
-/home/wb/ros_ws/src/my_robot_navigation/config/slam_toolbox_config.yaml
+# SLAM Toolbox Configuration for my_robot
+# Optimized for differential drive robot with 360-degree laser scanner
+
+slam_toolbox:
+  ros__parameters:
+    # Plugin configuration
+    solver_plugin: solver_plugins::CeresSolver
+    ceres_linear_solver: SPARSE_NORMAL_CHOLESKY
+    ceres_preconditioner: SCHUR_JACOBI
+    ceres_trust_strategy: LEVENBERG_MARQUARDT
+    ceres_dogleg_type: TRADITIONAL_DOGLEG
+    ceres_loss_function: None
+
+    # ROS Parameters
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_link
+    scan_topic: /scan
+    use_map_saver: true
+    mode: mapping # mapping, localization, lifelong
+
+    # General Parameters
+    use_scan_matching: true
+    use_scan_barycenter: true
+    minimum_time_interval: 0.5
+    transform_publish_period: 0.02  # 50Hz transform publishing
+    map_update_interval: 5.0
+    resolution: 0.05  # 5cm map resolution
+    max_laser_range: 5.0  # Match laser scanner max range
+    minimum_travel_distance: 0.2  # Minimum distance to trigger new scan
+    minimum_travel_heading: 0.2   # Minimum rotation to trigger new scan
+
+    # Correlation Parameters
+    correlation_search_space_dimension: 0.5
+    correlation_search_space_resolution: 0.01
+    correlation_search_space_smear_deviation: 0.1
+
+    # Loop Closure Parameters
+    loop_search_maximum_distance: 3.0
+    do_loop_closing: true
+    loop_match_minimum_chain_size: 10
+    loop_match_maximum_variance_coarse: 3.0
+    loop_match_minimum_response_coarse: 0.35
+    loop_match_minimum_response_fine: 0.45
+
+    # Dynamic Parameters - suitable for hexagonal arena
+    upper_bound_range: 25.0
+    minimum_angle_penalty: 0.9
+    minimum_distance_penalty: 0.5
+    use_response_expansion: true

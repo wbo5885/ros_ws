@@ -1,1 +1,0 @@
-/home/wb/ros_ws/src/navigation2/nav2_collision_monitor/launch/collision_monitor_node.launch.py
